@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IDWFED</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
-    <link rel="stylesheet" href="stylesheets/font-awesome.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
@@ -110,7 +109,7 @@
             <section class="main inner">
                 <div class="row">
 				  
-					<div id="sidebar-left" class="large-3 columns">
+					<div class="large-3 columns">
 						<dl class="theme-portlet">
                             <dt><i class="fa fa-check-circle-o"></i> portlet title</dt>
                             <dd>portlet item</dd>
@@ -130,7 +129,7 @@
                         </dl>
                     </div>
 				  
-					<div id="portal-column-content" class="large-6 columns">
+					<div class="large-6 columns">
 					  	<div class="content">
 							<h1>Page Title</h1>
 							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
@@ -141,7 +140,7 @@
 						</div><!--end content-->
 					</div>
 				  
-                    <div id="sidebar-right" class="large-3 columns">
+                    <div class="large-3 columns">
 						<dl class="theme-portlet">
                             <dt><i class="fa fa-check-circle-o"></i> portlet title</dt>
                             <dd>portlet item</dd>
@@ -213,21 +212,22 @@
                 
                 <div class="footer-bottom">
                     <div class="row">
-                        <div class="large-7 columns">
+                        <div class="large-8 columns">
                             <p class="disclaimer">© 2014 International Domestic workers Federation</p>
                             <p class="sub-disclaimer">All Right Reserved * Terms * Privacy * Disclaimer</p>
                         </div>
-                        <div class="large-5 columns">
-                            <ul class="right social-connect-wrapper">
-                              <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                              <li><a href=""><i class="fa fa-google-plus"></i></a></li>
-                              <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                              <li><a href=""><i class="fa fa-flickr"></i></a></li>
-                              <li><a href=""><i class="fa fa-youtube"></i></a></li>
-                              <li><a href=""><i class="fa fa-rss"></i></a></li>
+                        <div class="large-4 columns">
+                            <ul class="social-connect-wrapper row collapse">
+                              <li class="social-fb large-2 medium-2 small-4 columns"><a href=""><i class="fa fa-facebook"></i></a></li>
+                              <li class="social-gp large-2 medium-2 small-4 columns"><a href=""><i class="fa fa-google-plus"></i></a></li>
+                              <li class="social-tw large-2 medium-2 small-4 columns"><a href=""><i class="fa fa-twitter"></i></a></li>
+                              <li class="social-fl large-2 medium-2 small-4 columns"><a href=""><i class="fa fa-flickr"></i></a></li>
+                              <li class="social-yt large-2 medium-2 small-4 columns"><a href=""><i class="fa fa-youtube"></i></a></li>
+                              <li class="social-rss large-2 medium-2 small-4 columns"><a href=""><i class="fa fa-rss"></i></a></li>
                             </ul>
                         </div>
                     </div>
+
                     
                 </div>
             </footer><!--end footer-->
@@ -238,25 +238,6 @@
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
-	<script type="text/javascript" src="js/jquery-ui-1.9.0.custom.min.js" ></script>
-	<script type="text/javascript" src="js/jquery-ui-tabs-rotate.js" ></script>
-
     <script src="js/app.js"></script>
-	
-	<script>
-		$(document).ready(function(){  
-		  $("#featured").tabs({fx:{opacity: "toggle"}}).tabs("rotate", 5000, true);  
-		  $("#featured").hover(  
-		  function() {  
-		  $("#featured").tabs("rotate",0,true);  
-		  },  
-		  function() {  
-		  $("#featured").tabs("rotate",5000,true);  
-		  }  
-		  );  
-		});  
-
-	</script>
-	
   </body>
 </html>
