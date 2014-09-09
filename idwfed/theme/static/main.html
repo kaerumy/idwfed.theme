@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IDWFED</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
-    <link rel="stylesheet" href="stylesheets/font-awesome.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
   <body>
@@ -13,16 +12,16 @@
 	<div class="off-canvas-wrap canvas-wrapper" data-offcanvas>
         <div class="inner-wrap panel">
             <nav class="mobile-menu show-for-small-up hide-for-large-up tab-bar">
-              <section class="left-small">
-                <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+              <section class="right-small">
+                <a class="right-off-canvas-toggle menu-icon" ><span></span></a>
               </section>
         
-              <section class="right tab-bar-section">
+              <section class="left tab-bar-section">
                 <h1 class="title">IDWFED</h1>
               </section>
             </nav>
             <!-- Off Canvas Menu -->
-            <aside class="left-off-canvas-menu">
+            <aside class="right-off-canvas-menu">
               <!-- whatever you want goes here -->
               <ul class="mobile-menu off-canvas-list">
                 <li><a href="#">About</a></li>
@@ -96,9 +95,25 @@
             
             <!--slider-->
             <div class="focus-container">
-                <div class="focus-image-wrapper">
-                    <img src="./stylesheets/images/slide.jpg" alt="slide" />
+                <div class="gallery">
+                <div id="item-1" class="control-item" " class="control-operator"></div>
+                <div id="item-2" class="control-operator"></div>
+                <div id="item-3" class="control-operator"></div>
+                <figure class="item slide-1">
+                  <h1>Item 1</h1>
+                </figure>
+                <figure class="item slide-2">
+                  <h1>Item 2</h1>
+                </figure>
+                <figure class="item slide-3">
+                  <h1>Item 3</h1>
+                </figure>
+                <div class="controls">
+                  <a class="control-item" href="#item-1">•</a>
+                  <a class="control-item" href="#item-2">•</a>
+                  <a class="control-item" href="#item-3">•</a>
                 </div>
+              </div>
                 <!--<div class="home-signin">
                     Sign in
                 </div>-->
