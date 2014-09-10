@@ -21,7 +21,7 @@
     <stylesheet title=""
        id="++theme++idwfed.theme/stylesheets/app.css"
        media="screen" rel="stylesheet" rendering="import"
-       cacheable="True" compression="safe" cookable="True"
-       enabled="1" expression="python: request.HTTP_X_THEME_ENABLED and not '@@theming-controlpanel' in request.getURL()" applyPrefix="True"/>
+       cacheable="False" compression="safe" cookable="False"
+       enabled="1" expression="python: request.HTTP_X_THEME_ENABLED and not '@@theming-controlpanel' in request.getURL()" applyPrefix="True" insert-before="reset"/>
 
 </object>
