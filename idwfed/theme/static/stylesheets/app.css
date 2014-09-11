@@ -8587,7 +8587,7 @@ h1.headline {
   color: white;
   color: white; }
 
-@-webkit-keyframes galleryAnimation {
+@keyframes galleryAnimation {
   0% {
     opacity: 0; }
 
@@ -8597,7 +8597,7 @@ h1.headline {
   42.9%, 100% {
     opacity: 0; } }
 
-@-webkit-keyframes controlAnimation {
+@keyframes controlAnimation {
   0% {
     color: whiteSmoke;
     color: rgba(255, 255, 255, 0.4); }
