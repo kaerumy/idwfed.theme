@@ -22,8 +22,7 @@
         <replace css:theme-children="#portal-searchbox"
             css:content-children="#portal-searchbox"/>
 
-        <replace css:theme="#logo img"
-            css:content="#portal-logo img"/>
+        <!--<replace css:theme="#logo" css:content="#portal-logo" attribute="href" />-->
 
         <replace css:theme-children="#portal-globalnav"
             css:content-children="#portal-globalnav"/>
@@ -68,8 +67,120 @@
         </replace>
         
         <!--homepage-->
-        <rules css:if-content=".section-front-page">
+        <rules css:if-content=".portaltype-collective-cover-content.section-front-page">
             <theme href="main.html"/>
+            <!--updates-->
+            <replace css:theme-children=".wrap-updates">
+                <dl class="theme-portlet wrap-updates">
+                    <dt>
+                        <i class="fa fa-check-circle-o theme-orange"></i>
+                        <xsl:value-of css:select="#content > div:nth-child(2) > div.cell.width-4.position-0 > div.tile > div.cover-collection-tile.tile-content > div.tile-header > h2" />
+                    </dt>
+                    <dd>
+                        <ul>
+                            <xsl:for-each css:select="#content > div:nth-child(2) > div.cell.width-4.position-0 > div.tile > div.cover-collection-tile.tile-content > .collection-item">
+                                <li><xsl:copy-of css:select="h2 a" /></li>
+                            </xsl:for-each>
+                        </ul>    
+                    </dd>
+                </dl>
+            </replace>
+            <!--featured content-->
+            <replace css:theme-children=".wrap-featured">
+                <div class="featured wrap-featured">
+                    <div class="featured-img">
+                        <xsl:copy-of css:select="#content > div:nth-child(2) > div.cell.width-6.position-4 > div.tile > div.cover-basic-tile.tile-content > a.imag" />
+                    </div>
+                    <div class="featured-text">
+                        <p class="title">
+                            <xsl:copy-of css:select="#content > div:nth-child(2) > div.cell.width-6.position-4 > div.tile > div.cover-basic-tile.tile-content > h2 > a" />
+                        </p>
+                        <p><xsl:copy-of css:select="#content > div:nth-child(2) > div.cell.width-6.position-4 > div.tile > div.cover-basic-tile.tile-content > p" /></p>
+                    </div>
+                </div>
+            </replace>
+            <!--campaign-->
+            <replace css:theme-children=".wrap-campaign">
+                <dl class="theme-portlet wrap-campaign">
+                    <dt><i class="fa fa-globe theme-orange"></i> Campaign</dt>
+                    <dd>
+                        <xsl:copy-of css:select="#content > div:nth-child(2) > div.cell.width-4.position-10 > div.tile > div.cover-collection-tile.tile-content > .collection-item" />
+                    </dd>
+                </dl>
+            </replace>
+            <!--activities-->
+            <replace css:theme-children=".wrap-activities">
+                <dl class="theme-portlet wrap-activities">
+                    <dt>
+                        <i class="fa fa-calendar theme-orange"></i>
+                        <xsl:value-of css:select="#content > div:nth-child(3) > div.cell.width-4.position-0 > div.tile > div.cover-collection-tile.tile-content > div.tile-header > h1" />
+                    </dt>
+                    <xsl:for-each css:select="#content > div:nth-child(3) > div.cell.width-4.position-0 > div.tile > div.cover-collection-tile.tile-content > .collection-item">
+                        <dd>
+                                <div class="item-img">
+                                    <xsl:copy-of css:select="a > img" />
+                                </div>
+                                <div class="item-text">
+                                    <p class="title">
+                                        <xsl:copy-of css:select="h3 > a" />
+                                    </p>
+                                    <p><xsl:value-of css:select="p.description" /></p>
+                                </div>
+                        </dd>
+                    </xsl:for-each>
+                </dl>
+            </replace>
+            <!--partner-->
+            <replace css:theme-children=".wrap-partner">
+                <dl class="theme-portlet wrap-partner">
+                    <dt>
+                        <i class="fa fa-user theme-orange"></i>
+                        <xsl:value-of css:select="#content > div:nth-child(3) > div.cell.width-4.position-4 > div.tile > div.cover-basic-tile.tile-content > h2 > a" />
+                    </dt>
+                    <dd>
+                        <div class="partner text-center">
+                            <xsl:element name="a">
+                                <xsl:attribute name="href">
+                                    <xsl:value-of select="a/@href" />
+                                </xsl:attribute>
+                                <xsl:attribute name="class">item-link</xsl:attribute>
+                                <xsl:copy-of css:select="#content > div:nth-child(3) > div.cell.width-4.position-4 > div.tile > div.cover-basic-tile.tile-content > a.imag > img" />
+                                <p class="title">
+                                    <xsl:copy-of css:select="#content > div:nth-child(3) > div.cell.width-4.position-4 > div.tile > div.cover-basic-tile.tile-content > p" /></p>
+                            </xsl:element>
+                        </div>
+                    </dd>
+                </dl>
+            </replace>
+            <!--partners-->
+            <replace css:theme-children=".wrap-partners">
+                <dl class="theme-portlet wrap-campaign">
+                    <dt>
+                        <i class="fa fa-users theme-orange"></i>
+                        <xsl:value-of css:select="#content > div:nth-child(3) > div.cell.width-8.position-8 > div.tile > div.cover-collection-tile.tile-content > .tile-header > h2" />
+                    </dt>
+                    <xsl:for-each css:select="#content > div:nth-child(3) > div.cell.width-8.position-8 > div.tile > div.cover-collection-tile.tile-content > .collection-item">
+                        <dd>
+                            <xsl:element name="a">
+                                <xsl:attribute name="href">
+                                    <xsl:value-of select="a/@href" />
+                                </xsl:attribute>
+                                <div class="item-img">
+                                    <xsl:copy-of css:select="a > img" />
+                                </div>
+                                <div class="item-text">
+                                    <p class="title">
+                                        <xsl:value-of css:select="h2 > a" />
+                                    </p>
+                                    <p><xsl:value-of css:select="p.description" /></p>
+                                </div>
+                            </xsl:element>
+                        </dd>
+                    </xsl:for-each>
+                </dl>
+            </replace>
+            
+            
         </rules>
         
         <theme href="center-content.html" if-content="//div[@id='portal-column-one'] and //div[@id='portal-column-two']"/>
