@@ -1313,6 +1313,18 @@
   font-weight: normal;
   font-style: italic; }
 
+@font-face {
+  font-family: 'Choplin';
+  src: url('../fonts/Choplin-Medium-DEMO.otf');
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Choplin Extra Light';
+  src: url('../fonts/Choplin-ExtraLight-DEMO.otf');
+  font-weight: normal;
+  font-style: normal; }
+
 meta.foundation-version {
   font-family: "/5.4.2/"; }
 
@@ -7152,63 +7164,71 @@ dl.theme-portlet {
     top: 0; }
 
 footer {
-  background: url(./images/clothingline.png) repeat-x 0 0 #ececec;
-  padding-top: 72px; }
+  /*background: url(./images/clothingline.png) repeat-x 0 0 #ececec;*/
+  /*padding-top: 72px;*/ }
   footer .footer-top {
-    background: none #b8c8c5;
-    padding: 2rem 0;
+    background: url(./images/clothingline.jpg) 0 0 repeat-x #b8c8c5;
+    padding-top: 2rem;
     /*footer top portlet*/ }
-    footer .footer-top dl.f-top-portlet dt {
-      text-transform: uppercase;
-      color: #006843; }
-    footer .footer-top dl.f-top-portlet dd {
-      margin: 0; }
-      footer .footer-top dl.f-top-portlet dd i {
-        color: #006843; }
+    footer .footer-top dl.f-top-portlet {
+      padding-top: 5rem;
+      color: #00033f; }
+      footer .footer-top dl.f-top-portlet dt {
+        text-transform: uppercase;
+        color: #006843;
+        font-family: Choplin, Aleo, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+      footer .footer-top dl.f-top-portlet dd {
+        margin: 0; }
+        footer .footer-top dl.f-top-portlet dd i {
+          color: #006843; }
+    footer .footer-top > div {
+      background: url(./images/clip-apron.png) top right no-repeat transparent;
+      padding-bottom: 4rem; }
+    footer .footer-top .signup-newsletter dt {
+      text-align: center; }
+    footer .footer-top .signup-newsletter dd p {
+      text-align: center;
+      margin-top: 50px;
+      font-style: italic;
+      font-size: 14px;
+      color: #00033f; }
+    footer .footer-top .signup-newsletter input, footer .footer-top .signup-newsletter span {
+      box-shadow: 1px 1px 10px black; }
   footer .footer-bottom {
     background: none #8ec95f;
-    padding: 2rem 0;
+    padding: 1rem 0 0;
     /*social connect*/ }
     footer .footer-bottom .disclaimer {
       color: white;
       font-size: 23px;
-      font-weight: bold; }
+      font-family: Choplin, Aleo, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
     footer .footer-bottom .sub-disclaimer {
       color: white;
-      font-weight: bold; }
+      font-family: Choplin, Aleo, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
       footer .footer-bottom .sub-disclaimer a {
         color: white; }
     footer .footer-bottom ul.social-connect-wrapper {
-      list-style: none; }
+      list-style: none;
+      /*.social-fb a{background-color: #54349D; color: #fff}
+			.social-gp a{background-color: #DF322B; color: #fff}
+			.social-tw a{background-color: #3A99E8; color: #fff}
+			.social-fl a{background-color: #fff}
+			.social-yt a{background-color: #EC2D37; color: #fff}
+			.social-rss a{background-color: #F79A00; color: #fff}*/ }
       footer .footer-bottom ul.social-connect-wrapper li a {
         padding: 20% 5%;
         width: 90%;
         margin-bottom: 10px;
         display: block;
         text-align: center;
-        background: none white; }
+        background: none transparent;
+        color: white;
+        font-size: 48px; }
         footer .footer-bottom ul.social-connect-wrapper li a i {
           text-align: center;
           vertical-align: middle; }
       footer .footer-bottom ul.social-connect-wrapper li a:hover {
         opacity: 0.5; }
-      footer .footer-bottom ul.social-connect-wrapper .social-fb a {
-        background-color: #54349d;
-        color: white; }
-      footer .footer-bottom ul.social-connect-wrapper .social-gp a {
-        background-color: #df322b;
-        color: white; }
-      footer .footer-bottom ul.social-connect-wrapper .social-tw a {
-        background-color: #3a99e8;
-        color: white; }
-      footer .footer-bottom ul.social-connect-wrapper .social-fl a {
-        background-color: white; }
-      footer .footer-bottom ul.social-connect-wrapper .social-yt a {
-        background-color: #ec2d37;
-        color: white; }
-      footer .footer-bottom ul.social-connect-wrapper .social-rss a {
-        background-color: #f79a00;
-        color: white; }
 
 /* @group Content Area */
 /* Editor styles */
