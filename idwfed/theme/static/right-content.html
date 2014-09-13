@@ -57,13 +57,21 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="large-3 columns">
-                        <a href="#" data-dropdown="portal-languageselector" aria-controls="portal-languageselector" aria-expanded="false" class="language-button">Select Language</a>
-                        <ul id="portal-languageselector" data-dropdown-content class="f-dropdown language" aria-hidden="true" tabindex="-1">
-                          <li><a href="#">This is a link</a></li>
-                          <li><a href="#">This is another</a></li>
-                          <li><a href="#">Yet another</a></li>
-                        </ul>
+                    <div class="large-3 columns user-act-bar">
+                        <div class="row">
+                            <div class="large-8 columns lang-container">
+                                <select>
+                                    <option value="starbuck">English</option>
+                                    <option value="hotdog">Lang2</option>
+                                    <option value="apollo">Lang3</option>
+                                </select>
+                            </div>
+                            <div class="large-4 columns">
+                                <a class="search" href="#" data-dropdown="search0" data-options="align:left" aria-controls="search0" aria-expanded="true">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -81,14 +89,14 @@
                 </div>
                 
                 <div class="large-4 columns">
-                    <!--search-->
-                    <div class="search-container">
-                        <form class="search-portlet">
-                            <div class="search-field">
-                                <input type="text" placeholder="Search" />
-                                <input type="submit" value="Search" />
-                            </div>
-                        </form>
+                    <!--colored icons-->
+                    <div class="top-icon-container">
+                        <a class="share-icon share-facebook" target="_blank" href="" title="Share on Facebook"></a>
+                        <a class="share-icon share-twitter" target="_blank" href="" title="Share on Twitter"></a>
+                        <a class="share-icon share-googleplus" target="_blank" href="" title="Share on Google Plus"></a>
+                        <a class="share-icon share-youtube" target="_blank" href="" title="Share on Youtube"></a>
+                        <a class="share-icon share-flickr" target="_blank" href="" title="Share on Flickr"></a>
+                        <a class="share-icon share-rss" target="_blank" href="" title="Share on RSS"></a>
                     </div>
                 </div>
             </header>
@@ -168,23 +176,29 @@
                             </dl>
                         </div>
                         <div class="large-3 columns">
-                            <dl class="f-top-portlet">
-                                <dt>portlet title</dt>
-                                <dd><a href="">portlet item</a></dd>
-                                <dd><a href="">portlet item</a></dd>
-                                <dd><a href="">portlet item</a></dd>
-                                <dd><a href="">portlet item</a></dd>
-                                <dd><a href="">portlet item</a></dd>
+                            <dl class="f-top-portlet contact-us">
+                                <dt>Contact Us</dt>
+                                <dd><i class="fa fa-home"></i> Lorem Ipsum is simply</dd>
+                                <dd><i class="fa fa-phone-square"></i> +00-000-0000-00</dd>
+                                <dd><a href=""><i class="fa fa-envelope"></i> my@email.com</a></dd>
                             </dl>
                         </div>
                         <div class="large-3 columns">
-                            <dl class="f-top-portlet">
-                                <dt>portlet title</dt>
-                                <dd><a href="">portlet item</a></dd>
-                                <dd><a href="">portlet item</a></dd>
-                                <dd><a href="">portlet item</a></dd>
-                                <dd><a href="">portlet item</a></dd>
-                                <dd><a href="">portlet item</a></dd>
+                            <dl class="f-top-portlet signup-newsletter">
+                                <dt>signup newsletter</dt>
+                                <dd>
+                                    <p>Get our update in your inbox!</p>
+                                    <form>
+                                        <div class="row collapse">
+                                            <div class="small-9 columns">
+                                                <input type="text" placeholder="Enter your Email Address" />
+                                            </div>
+                                            <div class="small-3 columns">
+                                                <span class="postfix theme-orange">Go</span>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </dd>
                             </dl>
                         </div>
                     </div>
@@ -207,7 +221,6 @@
                             </ul>
                         </div>
                     </div>
-
                     
                 </div>
             </footer><!--end footer-->
