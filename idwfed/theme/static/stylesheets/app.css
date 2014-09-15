@@ -7060,11 +7060,13 @@ nav {
 
 /*focus area*/
 .focus-container {
-  background: none #41515c;
+  background: url(./images/banner.jpg) top right repeat-x #41515c;
   min-height: 100px; }
   .focus-container .tagline {
     color: white;
-    text-align: right; }
+    text-align: right;
+    line-height: 60px;
+    text-shadow: -1px 1px 5px #00033f; }
 
 /*tagline*/
 .tagline {
@@ -7072,7 +7074,7 @@ nav {
   text-align: center;
   text-transform: uppercase;
   font-size: 2.5rem;
-  margin: 30px 0;
+  padding: 30px 0;
   color: #007236; }
 
 /*content main*/
