@@ -30,9 +30,19 @@
         <replace css:theme-children="ul.mobile-menu"
             css:content-children="#portal-globalnav"/>
         
-        <replace 
-            css:theme-children='#portal-languageselector' 
-            css:content-children='#portal-languageselector'/>
+        <replace css:theme-children='.lang-container'>
+            <select onchange="location = this.options[this.selectedIndex].value;">
+                <option>Select Language</option>
+                <xsl:for-each css:select="#portal-languageselector li">
+                    <xsl:element name="option">
+                        <xsl:attribute name="value">
+                            <xsl:value-of select="a/@href" />
+                        </xsl:attribute>
+                        <xsl:value-of select="a" />
+                    </xsl:element>
+                </xsl:for-each>
+            </select>
+        </replace>
             <!--mobile language-->
         <replace css:theme-children="ul.mobile-languageselector"
             css:content-children="#portal-languageselector"/>
@@ -180,22 +190,7 @@
                 </dl>
             </replace>
             <after css:theme-children="body">
-                <script type="text/javascript" src="++theme++idwfed.theme/js/jssor.slider.mini.js"></script>
-                <script>
-                  var canvas = document.getElementById('bg-orange');
-                  var context = canvas.getContext('2d');
-                  var centerX = canvas.width / 2;
-                  var centerY = canvas.height / 2;
-                  var radius = 70;
-            
-                  context.beginPath();
-                  context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
-                  context.fillStyle = 'green';
-                  context.fill();
-                  context.lineWidth = 5;
-                  context.strokeStyle = '#003300';
-                  context.stroke();
-                </script>
+                <script type="text/javascript" src="++theme++idwfed.theme/js/jssor.slider.mini.js"></script>                
                 <script>
                     jQuery(document).ready(function ($) {
             
