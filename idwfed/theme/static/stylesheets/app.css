@@ -7099,7 +7099,8 @@ section.main.home-main {
     overflow: hidden;
     width: 100%; }
     .featured .featured-img img {
-      border-radius: 0.5rem 0.5rem 0 0; }
+      border-radius: 0.5rem 0.5rem 0 0;
+      width: 100%; }
   .featured .featured-text .title {
     font-size: 1.2rem;
     color: #000136;
