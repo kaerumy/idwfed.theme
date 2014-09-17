@@ -6910,7 +6910,7 @@ nav {
     box-sizing: border-box;
     margin: 0; }
   .searchform .searchField, .searchform .searchfield {
-    background: none white;
+    background: none rgba(255, 255, 255, 0.5);
     width: 100px;
     padding: 0 5px;
     /*border: 1px solid #999;*/
@@ -8718,6 +8718,42 @@ ul.configlets {
   padding: 6px 5px; }
 
 /*end field adjustment*/
+/*input type*/
+input[type="button"], input[type="reset"], input[type="submit"] {
+  border-style: solid;
+  border-width: 0px;
+  cursor: pointer;
+  font-family: Aleo, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  display: inline-block;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1.0625rem;
+  padding-left: 2rem;
+  font-size: 1rem;
+  background-color: #00033f;
+  border-color: #000332;
+  color: white;
+  transition: background-color 300ms ease-out; }
+  input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {
+    background-color: #000332; }
+  input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {
+    color: white; }
+
+#content input[type="submit"], #content input[type="reset"] {
+  margin-right: 3px; }
+
+#content input[type="submit"]:last-child, #content input[type="reset"]:last-child {
+  margin-right: 0; }
+
+/*end - field adjustment*/
 /*fix for calendar/select date  */
 .calendar {
   z-index: 99; }
