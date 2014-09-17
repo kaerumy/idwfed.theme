@@ -6835,8 +6835,7 @@ body {
 
 .top-colorstrip {
   background: none #8ec95f;
-  color: white;
-  padding: 10px 0; }
+  color: white; }
 
 /*header*/
 .main-header {
@@ -6875,7 +6874,8 @@ nav {
     padding: 0;
     margin: 0; }
     nav ul li {
-      float: left; }
+      float: left;
+      padding-top: 5px; }
       nav ul li a {
         color: white; }
     nav ul li:after {
@@ -6886,47 +6886,62 @@ nav {
       content: ''; }
 
 /*language*/
-.lang-container select {
-  background-color: transparent;
-  margin: 0;
-  padding: 0 5px;
-  border: 1px thin white;
-  height: auto;
-  color: white; }
-  .lang-container select option {
-    color: #333333; }
+.lang-container {
+  float: right; }
+  .lang-container select {
+    color: white;
+    border: none;
+    background-color: transparent;
+    padding-right: 20px;
+    margin-bottom: 0; }
+    .lang-container select option {
+      color: #333333; }
 
 /*search*/
-.search {
-  color: white; }
-
-.search-container {
-  height: 40px;
+/* Form styles */
+.searchform {
   position: relative;
-  margin-top: 30px; }
-  .search-container .search-field {
-    border: 1px solid #222222;
-    height: 40px; }
-    .search-container .search-field input[type="text"] {
-      width: 90%;
-      border: none;
-      background: none transparent;
-      outline: none;
-      box-shadow: none; }
-    .search-container .search-field input[type="text"]:focus {
-      border: none; }
-    .search-container .search-field input[type="submit"] {
-      height: 40px;
-      width: 40px;
-      position: absolute;
-      top: 0;
-      right: 0;
-      border: none;
-      background: url(./images/button-search.png) no-repeat center center transparent;
-      padding: 10px;
-      cursor: pointer;
-      overflow: hidden;
-      text-indent: -9999em; }
+  width: 100px;
+  margin: 0;
+  float: right;
+  color: white; }
+  .searchform input {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0; }
+  .searchform .searchField, .searchform .searchfield {
+    background: none white;
+    width: 100px;
+    padding: 0 5px;
+    /*border: 1px solid #999;*/
+    /*border-bottom-color: #cecece;*/
+    /*border-radius: 5px;*/
+    /*box-shadow: inset 0 1px 2px rgba(0,0,0, .5), 0 0 0 5px #ededed;*/
+    -webkit-transition: all 0.25s linear;
+    transition: all 0.25s linear; }
+  .searchform .searchField:focus, .searchform .searchfield:focus {
+    width: 233px;
+    color: #666666;
+    /*box-shadow: inset 0 1px 2px rgba(0,0,0, .2), 0 0 0 6px #e0e0e0;*/ }
+  .searchform button {
+    background: none transparent;
+    position: absolute;
+    color: rgba(0, 0, 0, 0.75);
+    height: 24px;
+    width: 24px;
+    padding: 0;
+    margin: 0;
+    top: 5px;
+    right: 5px;
+    border: 0;
+    cursor: pointer;
+    zoom: 1;
+    /*filter: alpha(opacity=45);*/
+    opacity: 0.45;
+    -webkit-transition: all 0.25s linear;
+    transition: all 0.25s linear; }
+  .searchform .searchField:focus + button, .searchform .searchfield:focus + button {
+    right: -128px; }
 
 /*top social*/
 .top-icon-container {
@@ -7059,8 +7074,11 @@ nav {
     background-position: -303px -33px; }
 
 /*focus area*/
+.focus-container.inner {
+  background: url(./images/banner.jpg) top right repeat-x #41515c; }
+
 .focus-container {
-  background: url(./images/banner.jpg) top right repeat-x #41515c;
+  background-color: #41515c;
   min-height: 100px; }
   .focus-container .tagline {
     color: white;
@@ -7184,6 +7202,12 @@ footer {
         margin: 0; }
         footer .footer-top dl.f-top-portlet dd i {
           color: #006843; }
+        footer .footer-top dl.f-top-portlet dd p {
+          margin-bottom: 0; }
+        footer .footer-top dl.f-top-portlet dd ul {
+          list-style: none;
+          padding: 0;
+          margin: 0; }
     footer .footer-top > div {
       background: url(./images/clip-apron.png) top right no-repeat transparent;
       padding-bottom: 4rem; }
@@ -8808,3 +8832,34 @@ dl.newTagsSection dd textarea {
   content: "";
   display: block;
   clear: both; }
+
+/* @group LiveSearch */
+#LSResult {
+  position: absolute;
+  right: 0;
+  background: White;
+  margin: 0;
+  z-index: 100; }
+
+#LSResult fieldset {
+  padding: 1em 0 0;
+  border: 0.1em solid #cccccc; }
+
+#livesearchLegend {
+  background-color: #cccccc;
+  padding: 0.3em; }
+
+#LSResult .LSDescr {
+  font-size: 85%;
+  color: #666666; }
+
+.LSRow, #LSNothingFound {
+  display: block;
+  padding: 0.5em 1em;
+  white-space: normal;
+  width: 28em; }
+
+.LSHighlight {
+  background: #dddddd; }
+
+/* @end */
