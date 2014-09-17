@@ -66,12 +66,13 @@
             css:content-children="#portal-siteactions"/>
         
         <!-- search -->
-        <replace css:theme-children=".search-container">
-            <form class="search-portlet"><xsl:attribute name="action">
+        <replace css:theme=".searchform">
+            <form class="searchform"><xsl:attribute name="action">
                 <xsl:value-of select="//*[@id='portal-searchbox']/form/@action"/></xsl:attribute>
-                <div class="search-field">
-                <xsl:copy-of css:select="#portal-searchbox input[name='SearchableText']"/>
-                <xsl:copy-of css:select="#portal-searchbox input.searchButton"/>
+                <div>
+                    <xsl:copy-of css:select="#portal-searchbox input[name='SearchableText']"/>
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <xsl:copy-of css:select="#LSResult"/>
                 </div>
             </form>
         </replace>
