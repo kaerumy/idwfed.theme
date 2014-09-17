@@ -155,9 +155,9 @@
                                     <xsl:value-of select="a/@href" />
                                 </xsl:attribute>
                                 <xsl:attribute name="class">item-link</xsl:attribute>
+                                
                                 <xsl:copy-of css:select="#content > div:nth-child(3) > div.cell.width-4.position-4 > div.tile > div.cover-basic-tile.tile-content > a.imag > img" />
-                                <p class="title">
-                                    <xsl:copy-of css:select="#content > div:nth-child(3) > div.cell.width-4.position-4 > div.tile > div.cover-basic-tile.tile-content > p" /></p>
+                                <p class="title"><xsl:copy-of css:select="#content > div:nth-child(3) > div.cell.width-4.position-4 > div.tile > div.cover-basic-tile.tile-content > p" /></p>
                             </xsl:element>
                         </div>
                     </dd>
@@ -168,9 +168,9 @@
                 <dl class="theme-portlet wrap-campaign">
                     <dt>
                         <i class="fa fa-users theme-orange"></i>
-                        <xsl:value-of css:select="#content > div:nth-child(3) > div.cell.width-8.position-8 > div.tile > div.cover-collection-tile.tile-content > .tile-header > h2" />
+                        <xsl:value-of css:select="#content > div:nth-child(3) > div.cell.width-8.position-8 > div.tile > div.cover-richtext-tile.tile-content > h2" />
                     </dt>
-                    <xsl:for-each css:select="#content > div:nth-child(3) > div.cell.width-8.position-8 > div.tile > div.cover-collection-tile.tile-content > .collection-item">
+                    <xsl:for-each css:select="#content > div:nth-child(3) > div.cell.width-8.position-8 > div.tile > div.cover-richtext-tile.tile-content > p">
                         <dd>
                             <xsl:element name="a">
                                 <xsl:attribute name="href">
@@ -190,6 +190,7 @@
                     </xsl:for-each>
                 </dl>
             </replace>
+            
             <after css:theme-children="body">
                 <script type="text/javascript" src="++theme++idwfed.theme/js/jssor.slider.mini.js"></script>                
                 <script>
@@ -288,8 +289,9 @@
         <theme href="content.html"/>
         
         <!--footer top-->
-        <after css:theme-children=".footer-top">
-        </after>
+        <replace css:theme-children="div.footer-top > div > div:nth-child(1) > dl" css:content-children="#portlets-footer > div.cell.FooterPortletManager1 > div > dl" />
+        <replace css:theme-children="div.footer-top > div > div:nth-child(2) > dl" css:content-children="#portlets-footer > div.cell.FooterPortletManager2 > div > dl" />
+        <replace css:theme-children=".contact-us" css:content-children="#portlets-footer > div.cell.FooterPortletManager3 > div > dl" />
         
         <drop theme="/html/body/script" />
         <after css:theme-children="body">
