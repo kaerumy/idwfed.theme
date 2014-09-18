@@ -9043,3 +9043,13 @@ dl.newTagsSection dd textarea {
   margin-left: 5px;
   padding: 10px;
   color: white !important; }
+
+/*Search Page*/
+form.searchPage #search-field input {
+  display: inline; }
+form.searchPage #search-field input[type="submit"] {
+  padding: 0 10px;
+  border: 1px solid #cccccc; }
+form.searchPage #search-field input[type="text"] {
+  width: 60%;
+  padding: 10px; }
