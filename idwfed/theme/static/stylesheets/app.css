@@ -9055,3 +9055,10 @@ form.searchPage #search-field input[type="submit"] {
 form.searchPage #search-field input[type="text"] {
   width: 60%;
   padding: 10px; }
+
+/*Sharing buttons*/
+input#sharing-user-group-search, input#sharing-search-button {
+  display: inline; }
+
+input#sharing-search-button {
+  padding: 8px 10px; }
