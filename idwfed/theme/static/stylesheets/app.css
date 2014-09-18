@@ -8964,8 +8964,8 @@ dl.newTagsSection dd textarea {
 /*select, input[text] on widescreen*/
 @media only screen and (min-width: 40.063em) {
   .datetime-field {
-    display: inline !important;
-    margin-bottom: 0 !important; }
+    display: inline;
+    margin-bottom: 0; }
   #calroot {
     box-sizing: content-box; }
   #caltitle select {
@@ -9063,8 +9063,13 @@ input#sharing-user-group-search, input#sharing-search-button {
 input#sharing-search-button {
   padding: 8px 10px; }
 
+/*CSS ADJUSTMENT FOR NEW PACKAGES*/
 /*Content Chooser*/
 input#contentchooser-content-trees, input#contentchooser-content-search-input {
   box-shadow: none;
   padding: 0;
+  margin: 0; }
+
+/*Tile Configure*/
+#configure_tile input[type=radio] + label {
   margin: 0; }
