@@ -9062,3 +9062,9 @@ input#sharing-user-group-search, input#sharing-search-button {
 
 input#sharing-search-button {
   padding: 8px 10px; }
+
+/*Content Chooser*/
+input#contentchooser-content-trees, input#contentchooser-content-search-input {
+  box-shadow: none;
+  padding: 0;
+  margin: 0; }
