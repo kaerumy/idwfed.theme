@@ -78,8 +78,14 @@
         </replace>
         
         <!--homepage-->
-        <rules css:if-content=".portaltype-collective-cover-content.section-front-page">
+        <rules css:if-content=".portaltype-collective-cover-content.template-view">
             <theme href="main.html"/>
+            <before css:theme-children=".main.home-main">
+                <div class="row">
+                    <xsl:copy-of css:select="#edit-bar" />
+                    <xsl:copy-of css:select=".portalMessage.info" />
+                </div>
+            </before>
             <!--updates-->
             <replace css:theme-children=".wrap-updates">
                 <dl class="theme-portlet wrap-updates">
