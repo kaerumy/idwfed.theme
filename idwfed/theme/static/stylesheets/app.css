@@ -8899,3 +8899,8 @@ dl.newTagsSection dd textarea {
   background: #dddddd; }
 
 /* @end */
+/*Faceted Criteria*/
+#faceted-edit-widgets-ajax #export_button, #faceted-edit-widgets-ajax #import_button {
+  margin-left: 5px;
+  padding: 10px;
+  color: white !important; }
