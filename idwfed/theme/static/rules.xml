@@ -69,6 +69,27 @@
                 <xsl:copy-of css:select=".manageFooterPortletsLink"/>
         </after>
         
+        <!--login-->
+        <replace css:theme=".sign-in" css:if-content="#personaltools-login">
+            <xsl:element name="a">
+                <xsl:attribute name="href">
+                    <xsl:value-of select="//a[@id='personaltools-login']/@href" />
+                </xsl:attribute>
+                <xsl:attribute name="class">sign-in</xsl:attribute>
+                SIGN IN
+            </xsl:element>
+        </replace>
+        <!--logout-->
+        <replace css:theme=".sign-in" css:if-content="#personaltools-logout">
+            <xsl:element name="a">
+                <xsl:attribute name="href">
+                    <xsl:value-of select="//li[@id='personaltools-logout']/a/@href" />
+                </xsl:attribute>
+                <xsl:attribute name="class">sign-in</xsl:attribute>
+                SIGN OUT
+            </xsl:element>
+        </replace>
+        
         <!-- search -->
         <replace css:theme=".searchform">
             <form class="searchform"><xsl:attribute name="action">
