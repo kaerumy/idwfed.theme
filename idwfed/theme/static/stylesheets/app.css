@@ -7161,7 +7161,6 @@ dl.theme-portlet {
       min-height: 64px; }
     dl.theme-portlet dd .item-img {
       float: left;
-      height: 64px;
       width: 64px;
       margin-right: 10px; }
     dl.theme-portlet dd .item-text p {
@@ -7215,14 +7214,27 @@ footer {
       padding-bottom: 4rem; }
     footer .footer-top .signup-newsletter dt {
       text-align: center; }
+      footer .footer-top .signup-newsletter dt a {
+        color: #006843; }
     footer .footer-top .signup-newsletter dd p {
       text-align: center;
       margin-top: 50px;
       font-style: italic;
       font-size: 14px;
       color: #00033f; }
-    footer .footer-top .signup-newsletter input, footer .footer-top .signup-newsletter span {
+    footer .footer-top .signup-newsletter input[type="radio"] {
+      margin: 0; }
+    footer .footer-top .signup-newsletter input[type="text"], footer .footer-top .signup-newsletter input[type="submit"], footer .footer-top .signup-newsletter input.easynewsletter_text {
+      margin: 2px 0;
+      width: 100% !important; }
+    footer .footer-top .signup-newsletter input[type="text"], footer .footer-top .signup-newsletter input[type="submit"], footer .footer-top .signup-newsletter input.easynewsletter_text, footer .footer-top .signup-newsletter .postfix.theme-orange {
       box-shadow: 1px 1px 10px black; }
+    footer .footer-top .signup-newsletter input[type="submit"] {
+      text-align: center;
+      background: none #f7b500;
+      color: white; }
+    footer .footer-top .signup-newsletter input[type="text"], footer .footer-top .signup-newsletter input.easynewsletter_text {
+      padding: 5px; }
   footer .footer-bottom {
     background: none #8ec95f;
     padding: 1rem 0 0;
