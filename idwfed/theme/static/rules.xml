@@ -65,6 +65,10 @@
         <replace css:theme-children=".portal-siteactions"
             css:content-children="#portal-siteactions"/>
         
+        <after css:theme-children=".footer-top > div">
+                <xsl:copy-of css:select=".manageFooterPortletsLink"/>
+        </after>
+        
         <!-- search -->
         <replace css:theme=".searchform">
             <form class="searchform"><xsl:attribute name="action">
@@ -78,8 +82,14 @@
         </replace>
         
         <!--homepage-->
-        <rules css:if-content=".portaltype-collective-cover-content.section-front-page">
+        <rules css:if-content=".portaltype-collective-cover-content.template-view">
             <theme href="main.html"/>
+            <before css:theme-children=".main.home-main">
+                <div class="row">
+                    <xsl:copy-of css:select="#edit-bar" />
+                    <xsl:copy-of css:select=".portalMessage.info" />
+                </div>
+            </before>
             <!--updates-->
             <replace css:theme-children=".wrap-updates">
                 <dl class="theme-portlet wrap-updates">
@@ -170,24 +180,9 @@
                         <i class="fa fa-users theme-orange"></i>
                         <xsl:value-of css:select="#content > div:nth-child(3) > div.cell.width-8.position-8 > div.tile > div.cover-richtext-tile.tile-content > h2" />
                     </dt>
-                    <xsl:for-each css:select="#content > div:nth-child(3) > div.cell.width-8.position-8 > div.tile > div.cover-richtext-tile.tile-content > p">
                         <dd>
-                            <xsl:element name="a">
-                                <xsl:attribute name="href">
-                                    <xsl:value-of select="a/@href" />
-                                </xsl:attribute>
-                                <div class="item-img">
-                                    <xsl:copy-of css:select="a > img" />
-                                </div>
-                                <div class="item-text">
-                                    <p class="title">
-                                        <xsl:value-of css:select="h2 > a" />
-                                    </p>
-                                    <p><xsl:value-of css:select="p.description" /></p>
-                                </div>
-                            </xsl:element>
+                            <xsl:copy-of css:select="#content > div:nth-child(3) > div.cell.width-8.position-8 > div.tile > div.cover-richtext-tile.tile-content > p" />
                         </dd>
-                    </xsl:for-each>
                 </dl>
             </replace>
             
@@ -292,6 +287,7 @@
         <replace css:theme-children="div.footer-top > div > div:nth-child(1) > dl" css:content-children="#portlets-footer > div.cell.FooterPortletManager1 > div > dl" />
         <replace css:theme-children="div.footer-top > div > div:nth-child(2) > dl" css:content-children="#portlets-footer > div.cell.FooterPortletManager2 > div > dl" />
         <replace css:theme-children=".contact-us" css:content-children="#portlets-footer > div.cell.FooterPortletManager3 > div > dl" />
+        <replace css:theme-children=".signup-newsletter" css:content-children="#portlets-footer > div.cell.FooterPortletManager4 > div > dl" />
         
         <drop theme="/html/body/script" />
         <after css:theme-children="body">
