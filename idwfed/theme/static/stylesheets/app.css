@@ -8998,6 +8998,12 @@ dl.newTagsSection dd textarea {
     form#groups_search input.searchButton, form#users_search input.searchButton {
       padding: 6px 5px; } }
 
+/*viewlet-below-content*/
+#viewlet-below-content:before {
+  display: block;
+  clear: both;
+  content: ' '; }
+
 /*start comments*/
 .discussion .commentImage img {
   height: 32px; }
