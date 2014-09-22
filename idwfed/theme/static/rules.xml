@@ -23,7 +23,15 @@
             css:content-children="#portal-searchbox"/>
         
         <!--logo-->
-        <!--<replace css:theme="#logo" css:content="#portal-logo" />-->
+        <replace css:theme="#logo">
+            <xsl:element name="a">
+                <xsl:attribute name="href">
+                    <xsl:value-of select="//*[@id='portal-logo']/@href" />
+                </xsl:attribute>
+                <div></div>
+                <span><xsl:value-of select="//*[@id='portal-logo']/img/@title" /></span>
+            </xsl:element>
+        </replace>
 
         <replace css:theme-children="#portal-globalnav"
             css:content-children="#portal-globalnav"/>
