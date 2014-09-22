@@ -83,7 +83,7 @@
             <xsl:element name="a">
                 <xsl:attribute name="href">/@@user-preference</xsl:attribute>
                 <xsl:attribute name="class">sign-in</xsl:attribute>
-                SIGN IN
+                LOG IN
             </xsl:element>
         </replace>
         <!--logout-->
@@ -151,7 +151,7 @@
             <!--campaign-->
             <replace css:theme-children=".wrap-campaign">
                 <dl class="theme-portlet wrap-campaign">
-                    <dt><i class="fa fa-globe theme-orange"></i> Campaign</dt>
+                    <dt><i class="fa fa-globe theme-orange"></i> Campaigns</dt>
                     <dd>
                         <xsl:copy-of css:select="#content > div:nth-child(2) > div.cell.width-4.position-10 > div.tile > div.cover-collection-tile.tile-content > .collection-item" />
                     </dd>
