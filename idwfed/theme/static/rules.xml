@@ -21,8 +21,9 @@
             css:content-children="#portal-personaltools-wrapper"/>
         <replace css:theme-children="#portal-searchbox"
             css:content-children="#portal-searchbox"/>
-
-        <!--<replace css:theme="#logo" css:content="#portal-logo" attribute="href" />-->
+        
+        <!--logo-->
+        <!--<replace css:theme="#logo" css:content="#portal-logo" />-->
 
         <replace css:theme-children="#portal-globalnav"
             css:content-children="#portal-globalnav"/>
@@ -72,9 +73,7 @@
         <!--login-->
         <replace css:theme=".sign-in" css:if-content="#personaltools-login">
             <xsl:element name="a">
-                <xsl:attribute name="href">
-                    <xsl:value-of select="//a[@id='personaltools-login']/@href" />
-                </xsl:attribute>
+                <xsl:attribute name="href">/@@user-preference</xsl:attribute>
                 <xsl:attribute name="class">sign-in</xsl:attribute>
                 SIGN IN
             </xsl:element>
