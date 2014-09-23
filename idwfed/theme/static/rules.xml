@@ -123,6 +123,10 @@
                     <xsl:copy-of css:select=".portalMessage.info" />
                 </div>
             </before>
+            <!--tagline-->
+            <replace css:theme-children=".tagline">
+                <xsl:value-of select="//meta[contains(@name, 'description')]/@content" />
+            </replace>
             <!--updates-->
             <replace css:theme-children=".wrap-updates">
                 <dl class="theme-portlet wrap-updates">
