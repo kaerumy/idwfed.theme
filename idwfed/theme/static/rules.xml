@@ -160,7 +160,7 @@
             <!--campaign-->
             <replace css:theme-children=".wrap-campaign">
                 <dl class="theme-portlet wrap-campaign">
-                    <dt><i class="fa fa-globe theme-orange"></i> Campaigns</dt>
+                    <dt><i class="fa fa-globe theme-orange"></i> <xsl:value-of css:select="#content > div:nth-child(2) > div.cell.width-4.position-10 > div.tile.tile-default > div.cover-collection-tile.tile-content > div.tile-header > h2" /></dt>
                     <dd>
                         <xsl:copy-of css:select="#content > div:nth-child(2) > div.cell.width-4.position-10 > div.tile > div.cover-collection-tile.tile-content > .collection-item" />
                     </dd>
