@@ -29,7 +29,9 @@
                     <xsl:value-of select="//*[@id='portal-logo']/@href" />
                 </xsl:attribute>
                 <div></div>
-                <span><xsl:value-of select="//*[@id='portal-logo']/img/@title" /></span>
+                <span>
+                    <xsl:value-of css:select="#portlets-above > div > div:nth-child(2) > dl > dt" />
+                </span>
             </xsl:element>
         </replace>
 
