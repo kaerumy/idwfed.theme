@@ -171,7 +171,7 @@
                 <dl class="theme-portlet wrap-activities">
                     <dt>
                         <i class="fa fa-calendar theme-orange"></i>
-                        <xsl:value-of css:select="#content > div:nth-child(3) > div.cell.width-4.position-0 > div.tile > div.cover-collection-tile.tile-content > div.tile-header > h1" />
+                        <xsl:value-of css:select="#content > div:nth-child(3) > div.cell.width-4.position-0 > div.tile > div.cover-collection-tile.tile-content > div.tile-header > h2" />
                     </dt>
                     <xsl:for-each css:select="#content > div:nth-child(3) > div.cell.width-4.position-0 > div.tile > div.cover-collection-tile.tile-content > .collection-item">
                         <dd>
