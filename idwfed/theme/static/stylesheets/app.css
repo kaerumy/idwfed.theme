@@ -7130,10 +7130,10 @@ section.main.home-main {
   .featured .featured-text .title {
     font-size: 1.2rem;
     color: #000136;
-    margin-top: 10px;
-    margin-bottom: 0; }
+    margin-bottom: 10px; }
   .featured .featured-text p {
-    margin: 0 10px; }
+    margin-left: 10px;
+    margin-right: 10px; }
 
 /*theme portlet*/
 dl.theme-portlet {
@@ -7169,6 +7169,8 @@ dl.theme-portlet {
       float: left;
       width: 64px;
       margin-right: 10px; }
+    dl.theme-portlet dd .item-text p.title {
+      margin: 10px 0; }
     dl.theme-portlet dd .item-text p {
       margin: 0; }
     dl.theme-portlet dd ul {
