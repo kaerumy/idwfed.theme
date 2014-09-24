@@ -9206,3 +9206,9 @@ form[action="enl_subscribers_view"] span {
   padding: 0; }
 form[action="enl_subscribers_view"] input[type="submit"] {
   padding: 8px; }
+
+/*field required*/
+.field label[for="form.email"], .field label[for="form.current_password"], .field label[for="form.new_password"], .field label[for="form.new_password_ctl"] {
+  display: inline; }
+.field .fieldRequired {
+  color: #ececec !important; }
