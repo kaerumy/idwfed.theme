@@ -23,6 +23,8 @@
             css:content-children="#portal-searchbox"/>
         
         <!--logo-->
+        <drop css:content="dl.portlet-static-international-domestic-workers-federation" />
+        <drop css:content="dl.portlet-static-federacion-internacional-de-trabajadores-del-hogar" />
         <replace css:theme="#logo">
             <xsl:element name="a">
                 <xsl:attribute name="href">
@@ -30,9 +32,16 @@
                 </xsl:attribute>
                 <div></div>
                 <span>
-                    <xsl:value-of css:select="#portlets-above > div > div:nth-child(2) > dl > dt" />
+                    <xsl:value-of css:select="dl.portlet-static-international-domestic-workers-federation > dt" />
+                    <xsl:value-of css:select="dl.portlet-static-federacion-internacional-de-trabajadores-del-hogar > dt" />
                 </span>
             </xsl:element>
+        </replace>
+        
+        <!--tagline-->
+        <replace css:theme-children=".tagline">
+            <xsl:value-of css:select="dl.portlet-static-international-domestic-workers-federation > dd > p" />
+            <xsl:value-of css:select="dl.portlet-static-federacion-internacional-de-trabajadores-del-hogar > dd> p" />
         </replace>
 
         <replace css:theme-children="#portal-globalnav"
@@ -155,7 +164,7 @@
                     <div class="join-wrapper">
                         <xsl:element name="a">
                             <xsl:attribute name="href">
-                                <xsl:value-of select="//li[@id='personaltools-join']/a/@href" />
+                                <xsl:value-of select="//a[@id='personaltools-join']/@href" />
                             </xsl:attribute>
                             Join us!
                         </xsl:element>
@@ -163,10 +172,6 @@
                 </xsl:if>
             </replace>
             
-            <!--tagline-->
-            <replace css:theme-children=".tagline">
-                <xsl:value-of select="//meta[contains(@name, 'description')]/@content" />
-            </replace>
             <!--updates-->
             <replace css:theme-children=".wrap-updates">
                 <dl class="theme-portlet wrap-updates">

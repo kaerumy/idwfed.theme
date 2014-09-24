@@ -7081,7 +7081,7 @@ nav {
 
 /*focus area*/
 .focus-container.inner {
-  background: url(./images/banner.jpg) top right repeat-x #41515c; }
+  background: url(./images/banner.jpg) top right repeat #41515c; }
 
 .focus-container {
   background-color: #41515c;
@@ -8914,6 +8914,10 @@ th.column {
   width: auto;
   position: inherit; }
 
+/*Table*/
+table.listing, table.ordered-selection-field {
+  width: inherit; }
+
 /*table class listing*/
 table.listing th:last-child {
   float: none !important; }
@@ -9194,3 +9198,19 @@ input[name="form.contents.query"] {
   display: inline; }
   input[name="form.contents.query"] + input[name="form.contents.search"] {
     padding: 8px; }
+
+/*subscribers*/
+form[action="enl_subscribers_view"] span {
+  background: none transparent;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 0; }
+form[action="enl_subscribers_view"] input[type="submit"] {
+  padding: 8px; }
+
+/*field required*/
+.field label[for="form.email"], .field label[for="form.current_password"], .field label[for="form.new_password"], .field label[for="form.new_password_ctl"] {
+  display: inline; }
+.field .fieldRequired {
+  color: #ececec !important; }
