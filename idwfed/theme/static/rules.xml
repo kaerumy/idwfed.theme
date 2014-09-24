@@ -164,7 +164,7 @@
                     <div class="join-wrapper">
                         <xsl:element name="a">
                             <xsl:attribute name="href">
-                                <xsl:value-of select="//li[@id='personaltools-join']/a/@href" />
+                                <xsl:value-of select="//a[@id='personaltools-join']/@href" />
                             </xsl:attribute>
                             Join us!
                         </xsl:element>
