@@ -8914,13 +8914,15 @@ th.column {
   width: auto;
   position: inherit; }
 
-/*table class listing*/
-table.listing {
+/*Table*/
+table.listing, table.ordered-selection-field {
   width: inherit; }
-  table.listing th:last-child {
-    float: none !important; }
-  table.listing tbody {
-    word-break: break-all; }
+
+/*table class listing*/
+table.listing th:last-child {
+  float: none !important; }
+table.listing tbody {
+  word-break: break-all; }
 
 /*class LABEL*/
 .template-atct_image_transform #content-core > div.label, .formQuestion.label {
