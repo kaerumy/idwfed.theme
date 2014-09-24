@@ -9196,3 +9196,13 @@ input[name="form.contents.query"] {
   display: inline; }
   input[name="form.contents.query"] + input[name="form.contents.search"] {
     padding: 8px; }
+
+/*subscribers*/
+form[action="enl_subscribers_view"] span {
+  background: none transparent;
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 0; }
+form[action="enl_subscribers_view"] input[type="submit"] {
+  padding: 8px; }
