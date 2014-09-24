@@ -9181,3 +9181,10 @@ input#contentchooser-content-trees, input#contentchooser-content-search-input {
 /*Tile Configure*/
 #configure_tile input[type=radio] + label {
   margin: 0; }
+
+/*manage portlet*/
+div.portletAssignments {
+  font-size: inherit !important; }
+
+div.portletAssignments .managedPortletActions a, div.portletAssignments .managedPortletActions button {
+  padding: 0; }

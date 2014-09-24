@@ -121,10 +121,16 @@
             <theme href="main.html"/>
             <before css:theme-children=".main.home-main">
                 <div class="row">
+                    <xsl:copy-of css:select=".managePortletsAboveLink" />
                     <xsl:copy-of css:select="#edit-bar" />
                     <xsl:copy-of css:select=".portalMessage.info" />
                 </div>
             </before>
+            <after css:theme-children=".main.home-main">
+                <div class="row">
+                    <xsl:copy-of css:select=".managePortletsBelowLink" />
+                </div>
+            </after>
             <!--slider-->
             <replace css:theme-children=".focus-container">
                 <xsl:copy-of css:select=".portletUnsliderPortlet" />
