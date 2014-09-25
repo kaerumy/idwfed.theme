@@ -255,7 +255,7 @@
                         <div class="partner text-center">
                             <xsl:element name="a">
                                 <xsl:attribute name="href">
-                                    <xsl:value-of select="a/@href" />
+                                    <xsl:value-of select="//*[@id='content']/div[3]/div[2]/div[2]/div/a/@href" />
                                 </xsl:attribute>
                                 <xsl:attribute name="class">item-link</xsl:attribute>
                                 
