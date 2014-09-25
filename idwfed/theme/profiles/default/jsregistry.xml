@@ -1,25 +1,25 @@
 <?xml version="1.0"?>
 <object name="portal_javascripts" meta_type="JavaScripts Registry">
 	
-	<!--<javascript
+	<javascript
 		id="++resource++plone.app.jquery.js"
 		cacheable="True" compression="none"
 		cookable="False" enabled="True"
-		expression="not: request/HTTP_X_THEME_ENABLED | nothing"
-		inline="False" />-->
+		expression=""
+		inline="False" />
 
     <!-- -*- extra stuff goes here -*- -->
-	<!--<javascript
+	<javascript
 		id="++theme++idwfed.theme/js/jquery.min.js"
 		cacheable="True" compression="none"
-		cookable="False" enabled="True"
+		cookable="False" enabled="False"
 		expression="request/HTTP_X_THEME_ENABLED | nothing"
 		inline="False" insert-before="++resource++plone.app.jquery.js"/>
     <javascript
 		id="http://code.jquery.com/jquery-migrate-1.2.1.min.js"
 		cacheable="False" compression="none"
-		cookable="False" enabled="True"
+		cookable="False" enabled="False"
 		expression="request/HTTP_X_THEME_ENABLED | nothing"
-		inline="False" insert-before="++resource++plone.app.jquery.js"/>-->
+		inline="False" insert-before="++resource++plone.app.jquery.js"/>
 
 </object>
