@@ -9217,3 +9217,7 @@ form[action="enl_subscribers_view"] input[type="submit"] {
   display: inline; }
 .field .fieldRequired {
   color: #ececec !important; }
+
+/*portal-column-one under portal-column-content*/
+#portal-column-content #portal-column-one {
+  display: none; }
