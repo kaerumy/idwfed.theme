@@ -9221,3 +9221,10 @@ form[action="enl_subscribers_view"] input[type="submit"] {
 /*portal-column-one under portal-column-content*/
 #portal-column-content #portal-column-one {
   display: none; }
+
+/*upload image*/
+#uploadbutton {
+  margin-top: 0 !important; }
+
+#footer #action-button {
+  margin-bottom: -10px !important; }
