@@ -169,9 +169,13 @@
                 <xsl:if css:test="#personaltools-join">
                     <div class="join-wrapper">
                         <xsl:element name="a">
+                            <xsl:if test="/html[@lang='es']">
+                                <xsl:attribute name="href">
+                                    /es/join-us
+                                </xsl:attribute>
+                            </xsl:if>
                             <xsl:attribute name="href">
-                                <!--<xsl:value-of select="//a[@id='personaltools-join']/@href" />-->
-                                /join-us
+                                /en/join-us
                             </xsl:attribute>
                             Join us!
                         </xsl:element>
@@ -245,7 +249,7 @@
                 <dl class="theme-portlet wrap-partner">
                     <dt>
                         <i class="fa fa-user theme-orange"></i>
-                        <xsl:value-of css:select="#content > div:nth-child(3) > div.cell.width-4.position-4 > div.tile > div.cover-basic-tile.tile-content > h2 > a" />
+                        <xsl:value-of css:select="#content > div:nth-child(3) > div.cell.width-4.position-4 > div.tile > div.cover-file-tile.tile-content > h2" />
                     </dt>
                     <dd>
                         <div class="partner text-center">
@@ -255,7 +259,7 @@
                                 </xsl:attribute>
                                 <xsl:attribute name="class">item-link</xsl:attribute>
                                 
-                                <xsl:copy-of css:select="#content > div:nth-child(3) > div.cell.width-4.position-4 > div.tile > div.cover-basic-tile.tile-content > a.imag > img" />
+                                <xsl:copy-of css:select="#content > div:nth-child(3) > div.cell.width-4.position-4 > div.tile:nth-child(2) > div.cover-banner-tile.tile-content > a > img" />
                                 <p class="title"><xsl:copy-of css:select="#content > div:nth-child(3) > div.cell.width-4.position-4 > div.tile > div.cover-basic-tile.tile-content > p" /></p>
                             </xsl:element>
                         </div>
