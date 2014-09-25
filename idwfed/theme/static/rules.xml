@@ -146,7 +146,9 @@
                 <div class="login-wrapper">
                     <xsl:if css:test="#personaltools-login">
                         <xsl:element name="a">
-                            <xsl:attribute name="href">/@@user-preference</xsl:attribute>
+                            <xsl:attribute name="href">
+                                <xsl:value-of select="//a[@id='personaltools-login']/@href" />
+                            </xsl:attribute>
                             <xsl:value-of css:select="#personaltools-login" />
                         </xsl:element>
                     </xsl:if>
@@ -225,7 +227,7 @@
                                 </div>
                                 <div class="item-text">
                                     <p class="title">
-                                        <xsl:copy-of css:select="h3 > a" />
+                                        <xsl:copy-of css:select="h2 > a" />
                                     </p>
                                     <p><xsl:value-of css:select="p.description" /></p>
                                 </div>
