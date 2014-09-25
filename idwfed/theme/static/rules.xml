@@ -31,9 +31,13 @@
                     <xsl:value-of select="//*[@id='portal-logo']/@href" />
                 </xsl:attribute>
                 <div></div>
+                <xsl:if test="/html[@lang='es']">
+                    <span style="font-size:1.2rem">
+                        <xsl:value-of css:select="dl.portlet-static-federacion-internacional-de-trabajadores-del-hogar > dt" />
+                    </span>
+                </xsl:if>
                 <span>
                     <xsl:value-of css:select="dl.portlet-static-international-domestic-workers-federation > dt" />
-                    <xsl:value-of css:select="dl.portlet-static-federacion-internacional-de-trabajadores-del-hogar > dt" />
                 </span>
             </xsl:element>
         </replace>
