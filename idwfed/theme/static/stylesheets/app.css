@@ -8835,7 +8835,8 @@ dl.portlet ul.navTree .navTreeCurrentItem {
   position: absolute;
   bottom: 0;
   width: inherit;
-  padding-top: 20px !important; }
+  padding-top: 20px !important;
+  padding-bottom: 20px; }
   .unslider-slide-content h1 {
     line-height: 36px;
     font-size: 32px;
@@ -8843,6 +8844,8 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     text-shadow: -1px 1px 5px #00033f;
     font-family: Aleo, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     margin-left: 5%; }
+  .unslider-slide-content p {
+    display: none; }
 
 .portletUnsliderPortlet {
   margin: 0 auto; }
