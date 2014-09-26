@@ -7137,6 +7137,17 @@ section.main.home-main {
     margin-right: 10px; }
 
 /*theme portlet*/
+#sidebar-left dt.portletHeader, #sidebar-right dt.portletHeader {
+  background: none #8ec95f;
+  padding: 5px 10px;
+  color: white;
+  font-size: 1.5rem;
+  font-family: Norwester, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  border-radius: 0.5rem 0.5rem 0 0;
+  text-transform: uppercase; }
+  #sidebar-left dt.portletHeader a, #sidebar-right dt.portletHeader a {
+    color: white; }
+
 dl.theme-portlet {
   background: none white;
   border-radius: 0.5rem;
@@ -8696,7 +8707,7 @@ dl.portlet dt {
   line-height: normal; }
 
 dl.portlet dt.hiddenStructure {
-  padding: 0; }
+  padding: 0 !important; }
 
 dl.portlet dt a:link, dl.portlet dt a:visited, dl.portlet dt a:hover {
   color: black;
@@ -8770,7 +8781,8 @@ dl.portlet ul.navTree .navTreeCurrentItem {
   font-weight: bold;
   text-align: center;
   line-height: 1.6em;
-  border-bottom: none; }
+  border-bottom: none;
+  font-size: 1.2rem !important; }
 
 #visual-portal-wrapper dl.portletCalendar dd {
   padding: 0; }
