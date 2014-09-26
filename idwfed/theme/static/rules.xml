@@ -11,7 +11,7 @@
         <!-- Drop styles in the head - these are added back by including them from Plone -->
         <drop theme="/html/head/style | /html/head/script | /html/head/link | /html/head/title" />
         <prepend theme="/html/head" content="/html/head/base | /html/head/link | /html/head/style | /html/head/script | /html/head/meta | /html/head/title" />
-        <replace theme="/html" content="/html" attributes="lang"/>
+        <copy theme="/html" content="/html" attributes="lang"/>
         <merge theme="/html/body" content="/html/body" attributes="class"/>
         <merge theme="/html/body" content="/html/body" attributes="dir"/>
         <append css:theme="body" css:content="#plone-analytics"/>
@@ -174,9 +174,11 @@
                                     /es/join-us
                                 </xsl:attribute>
                             </xsl:if>
-                            <xsl:attribute name="href">
-                                /en/join-us
-                            </xsl:attribute>
+                            <xsl:if test="/html[@lang='en']">
+                                <xsl:attribute name="href">
+                                    /en/join-us
+                                </xsl:attribute>
+                            </xsl:if>
                             Join us!
                         </xsl:element>
                     </div>
