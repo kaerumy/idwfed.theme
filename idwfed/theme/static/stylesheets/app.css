@@ -8683,7 +8683,7 @@ a.managePortletsFallback {
 /* @group Portlets */
 dl.portlet {
   margin: 0 0 1em;
-  font-size: 80%;
+  font-size: inherit;
   background: none white;
   border-radius: 0.5rem; }
 
@@ -9228,3 +9228,9 @@ form[action="enl_subscribers_view"] input[type="submit"] {
 
 #footer #action-button {
   margin-bottom: -10px !important; }
+
+/*search base button*/
+#formfield-form-search_base input[id='form.search_base'] {
+  display: inline; }
+#formfield-form-search_base input[name='form.search_base.search'], #formfield-form-search_base input[name='form.search_base.browse.'], #formfield-form-search_base input[name='form.search_base.browse./en'], #formfield-form-search_base input[name='form.search_base.browse./es'], #formfield-form-search_base input[name='form.search_base.browse./shared'] {
+  padding: 8px !important; }
