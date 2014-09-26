@@ -8977,7 +8977,11 @@ ul.configlets {
   text-align: left;
   background: none; }
 .field table.ordered-selection-field button[name='upButton'], .field table.ordered-selection-field button[name='downButton'], .field table.ordered-selection-field button[name='from2toButton'], .field table.ordered-selection-field button[name='to2fromButton'] {
-  padding: 6px 5px; }
+  padding-top: 0.55556rem;
+  padding-right: 1.11111rem;
+  padding-bottom: 0.61111rem;
+  padding-left: 1.11111rem;
+  font-size: 0.61111rem; }
 
 /*end field adjustment*/
 /*input type*/
@@ -9105,7 +9109,7 @@ dl.newTagsSection dd textarea {
       width: auto;
       display: inline; }
     form#groups_search input.searchButton, form#users_search input.searchButton {
-      padding: 6px 5px; } }
+      padding: 8px; } }
 
 /*viewlet-below-content*/
 #viewlet-below-content:before {
@@ -9116,8 +9120,12 @@ dl.newTagsSection dd textarea {
 /*start comments*/
 .discussion .commentImage img {
   height: 32px; }
-.discussion button, .discussion input[type="submit"] {
-  padding: 5px 10px; }
+.discussion input[name="form.button.DeleteComment"] {
+  padding-top: 0.55556rem;
+  padding-right: 1.11111rem;
+  padding-bottom: 0.61111rem;
+  padding-left: 1.11111rem;
+  font-size: 0.61111rem; }
 .discussion .commentBody {
   font-style: italic;
   font-weight: normal;
@@ -9244,5 +9252,14 @@ form[action="enl_subscribers_view"] input[type="submit"] {
 /*search base button*/
 #formfield-form-search_base input[id='form.search_base'] {
   display: inline; }
-#formfield-form-search_base input[name='form.search_base.search'], #formfield-form-search_base input[name='form.search_base.browse.'], #formfield-form-search_base input[name='form.search_base.browse./en'], #formfield-form-search_base input[name='form.search_base.browse./es'], #formfield-form-search_base input[name='form.search_base.browse./shared'] {
-  padding: 8px !important; }
+#formfield-form-search_base input[name='form.search_base.search'] {
+  padding-top: 0.55556rem;
+  padding-right: 1.11111rem;
+  padding-bottom: 0.61111rem;
+  padding-left: 1.11111rem; }
+#formfield-form-search_base input[name='form.search_base.browse.'], #formfield-form-search_base input[name='form.search_base.browse./en'], #formfield-form-search_base input[name='form.search_base.browse./es'], #formfield-form-search_base input[name='form.search_base.browse./shared'] {
+  padding-top: 0.55556rem;
+  padding-right: 1.11111rem;
+  padding-bottom: 0.61111rem;
+  padding-left: 1.11111rem;
+  font-size: 0.61111rem; }
