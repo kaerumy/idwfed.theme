@@ -8918,7 +8918,7 @@ th.column {
   position: inherit; }
 
 /*Table*/
-table.listing, table.ordered-selection-field {
+table.listing, table.sequencewidget, table.ordered-selection-field {
   width: inherit; }
 
 /*table class listing*/
