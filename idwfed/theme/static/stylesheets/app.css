@@ -7179,7 +7179,8 @@ dl.theme-portlet {
       color: #00033f; }
     dl.theme-portlet dd .item-link {
       display: block;
-      min-height: 64px; }
+      min-height: 64px;
+      overflow: hidden; }
     dl.theme-portlet dd .item-img {
       float: left;
       width: 64px;
