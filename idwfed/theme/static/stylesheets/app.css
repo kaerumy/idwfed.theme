@@ -7248,16 +7248,16 @@ footer {
       color: #00033f; }
     footer .footer-top .signup-newsletter input[type="radio"] {
       margin: 0; }
-    footer .footer-top .signup-newsletter input[type="text"], footer .footer-top .signup-newsletter input[type="submit"], footer .footer-top .signup-newsletter input.easynewsletter_text {
+    footer .footer-top .signup-newsletter input[type="email"], footer .footer-top .signup-newsletter input[type="text"], footer .footer-top .signup-newsletter input[type="submit"], footer .footer-top .signup-newsletter input.easynewsletter_text {
       margin: 2px 0;
       width: 100% !important; }
-    footer .footer-top .signup-newsletter input[type="text"], footer .footer-top .signup-newsletter input[type="submit"], footer .footer-top .signup-newsletter input.easynewsletter_text, footer .footer-top .signup-newsletter .postfix.theme-orange {
+    footer .footer-top .signup-newsletter input[type="email"], footer .footer-top .signup-newsletter input[type="text"], footer .footer-top .signup-newsletter input[type="submit"], footer .footer-top .signup-newsletter input.easynewsletter_text, footer .footer-top .signup-newsletter .postfix.theme-orange {
       box-shadow: 1px 1px 10px black; }
     footer .footer-top .signup-newsletter input[type="submit"] {
       text-align: center;
       background: none #f7b500;
       color: white; }
-    footer .footer-top .signup-newsletter input[type="text"], footer .footer-top .signup-newsletter input.easynewsletter_text {
+    footer .footer-top .signup-newsletter input[type="email"], footer .footer-top .signup-newsletter input[type="text"], footer .footer-top .signup-newsletter input.easynewsletter_text {
       padding: 5px; }
   footer .footer-bottom {
     background: none #8ec95f;
@@ -9267,3 +9267,7 @@ form[action="enl_subscribers_view"] input[type="submit"] {
   padding-bottom: 0.61111rem;
   padding-left: 1.11111rem;
   font-size: 0.61111rem; }
+
+/*faceted*/
+.faceted_letter, .faceted-empty-column {
+  color: inherit !important; }
