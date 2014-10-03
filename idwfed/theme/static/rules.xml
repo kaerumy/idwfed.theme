@@ -239,8 +239,26 @@
                 <dl class="theme-portlet wrap-activities">
                     <dt>
                         <i class="fa fa-calendar theme-orange"></i>
+                        <!--en-->
+                        <xsl:value-of css:select="#content > div:nth-child(3) > div.cell.width-5.position-0 > div.tile > div.cover-collection-tile.tile-content > div.tile-header > h2" />
+                        <!--es-->
                         <xsl:value-of css:select="#content > div:nth-child(3) > div.cell.width-4.position-0 > div.tile > div.cover-collection-tile.tile-content > div.tile-header > h2" />
                     </dt>
+                    <!--en-->
+                    <xsl:for-each css:select="#content > div:nth-child(3) > div.cell.width-5.position-0 > div.tile > div.cover-collection-tile.tile-content > .collection-item">
+                        <dd>
+                                <div class="item-img">
+                                    <xsl:copy-of css:select="a > img" />
+                                </div>
+                                <div class="item-text">
+                                    <p class="title">
+                                        <xsl:copy-of css:select="h2 > a" />
+                                    </p>
+                                    <p><xsl:value-of css:select="p.description" /></p>
+                                </div>
+                        </dd>
+                    </xsl:for-each>
+                    <!--es-->
                     <xsl:for-each css:select="#content > div:nth-child(3) > div.cell.width-4.position-0 > div.tile > div.cover-collection-tile.tile-content > .collection-item">
                         <dd>
                                 <div class="item-img">
@@ -254,8 +272,12 @@
                                 </div>
                         </dd>
                     </xsl:for-each>
+                    
                     <dd style="padding:0;margin:0 10px;">
                         <p class="text-right" style="font-size:12px">
+                            <!--en-->
+                            <xsl:copy-of css:select="#content > div:nth-child(3) > div.cell.width-5.position-0 > div.tile > div.cover-collection-tile.tile-content > .tile-footer > a" />
+                            <!--es-->
                             <xsl:copy-of css:select="#content > div:nth-child(3) > div.cell.width-4.position-0 > div.tile > div.cover-collection-tile.tile-content > .tile-footer > a" />
                         </p>                        
                     </dd>
@@ -266,7 +288,9 @@
                 <dl class="theme-portlet wrap-partner">
                     <dt>
                         <i class="fa fa-user theme-orange"></i>
-                        <xsl:value-of css:select="#content > div:nth-child(3) > div.cell.width-4.position-4 > div.tile > div.cover-file-tile.tile-content > h2" />
+                        <!--en-->
+                        <xsl:value-of css:select="#content > div:nth-child(3) > div.cell.width-5.position-5 > div.tile > div.cover-richtext-tile.tile-content > h2" />
+                        <!--es-->
                         <xsl:value-of css:select="#content > div:nth-child(3) > div.cell.width-4.position-4 > div.tile > div.cover-richtext-tile.tile-content > h2" />
                     </dt>
                     <dd>
@@ -276,10 +300,10 @@
                                     <xsl:value-of select="//*[@id='content']/div[3]/div[2]/div[2]/div/a/@href" />
                                 </xsl:attribute>
                                 <xsl:attribute name="class">item-link</xsl:attribute>
-                                
-                                <xsl:copy-of css:select="#content > div:nth-child(3) > div.cell.width-4.position-4 > div.tile:nth-child(2) > div.cover-banner-tile.tile-content > a > img" />
-                                <p class="title"><xsl:copy-of css:select="#content > div:nth-child(3) > div.cell.width-4.position-4 > div.tile > div.cover-basic-tile.tile-content > p" /></p>
-                                
+                                <!--en-->
+                                <xsl:copy-of css:select="#content > div:nth-child(3) > div.cell.width-5.position-5 > div.tile:nth-child(2) > div.cover-richtext-tile.tile-content > a > img" />
+                                <p class="title"><xsl:copy-of css:select="#content > div:nth-child(3) > div.cell.width-5.position-5 > div.tile > div.cover-richtext-tile.tile-content > p" /></p>
+                                <!--es-->
                                 <xsl:copy-of css:select="#content > div:nth-child(3) > div.cell.width-4.position-4 > div.tile:nth-child(2) > div.cover-richtext-tile.tile-content > a > img" />
                                 <p class="title"><xsl:copy-of css:select="#content > div:nth-child(3) > div.cell.width-4.position-4 > div.tile > div.cover-richtext-tile.tile-content > p" /></p>
                                 
@@ -293,9 +317,19 @@
                 <dl class="theme-portlet wrap-campaign">
                     <dt>
                         <i class="fa fa-users theme-orange"></i>
+                        <!--en-->
+                        <xsl:value-of css:select="#content > div:nth-child(3) > div.cell.width-5.position-10 > div.tile > div.cover-richtext-tile.tile-content > h2" />
+                        <!--es-->
                         <xsl:value-of css:select="#content > div:nth-child(3) > div.cell.width-8.position-8 > div.tile > div.cover-richtext-tile.tile-content > h2" />
                     </dt>
-                    
+                    <!--en-->
+                    <xsl:for-each css:select="#content > div:nth-child(3) > div.cell.width-5.position-10 > div.tile > div.cover-richtext-tile.tile-content > .custom-item">
+                        <dd>
+                            <xsl:copy-of css:select=".item-img" />
+                            <xsl:copy-of css:select=".item-text" />
+                        </dd>
+                    </xsl:for-each>
+                    <!--es-->
                     <xsl:for-each css:select="#content > div:nth-child(3) > div.cell.width-8.position-8 > div.tile > div.cover-richtext-tile.tile-content > .custom-item">
                         <dd>
                             <xsl:copy-of css:select=".item-img" />
