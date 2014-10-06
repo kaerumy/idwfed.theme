@@ -295,9 +295,7 @@
                     <dd>
                         <xsl:copy-of css:select="#content > div:nth-child(3) > div:nth-child(3) > div.tile > div.cover-richtext-tile.tile-content > div" />
                         <xsl:copy-of css:select="#content > div:nth-child(3) > div:nth-child(3) > div.tile > div.cover-richtext-tile.tile-content > p" />
-                        <xsl:copy-of css:select="#content > div:nth-child(3) > div:nth-child(3) > div.tile > div.cover-richtext-tile.tile-content > div" />
                         <xsl:copy-of css:select="#content > div:nth-child(3) > div:nth-child(3) > div.tile > div.cover-richtext-tile.tile-content > ul" />
-                        <xsl:copy-of css:select="#content > div:nth-child(3) > div:nth-child(3) > div.tile > div.cover-richtext-tile.tile-content > div" />
                         <xsl:copy-of css:select="#content > div:nth-child(3) > div:nth-child(3) > div.tile > div.cover-richtext-tile.tile-content > ol" />
                     </dd>
                 </dl>
