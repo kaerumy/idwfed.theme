@@ -129,6 +129,8 @@
             </form>
         </replace>
         
+        <before css:theme=".lang-container" css:content="#portal-personaltools" />
+        
         <!--homepage-->
         <rules css:if-content=".portaltype-collective-cover-content.template-view">
             <theme href="main.html"/>

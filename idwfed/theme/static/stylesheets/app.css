@@ -6844,8 +6844,18 @@ body {
     margin: 20px; }
 
 .top-colorstrip {
-  background: none #8ec95f;
-  color: white; }
+  background: none #8ec95f; }
+  .top-colorstrip ul {
+    list-style: none;
+    margin: 0; }
+  .top-colorstrip #portal-personaltools {
+    font-size: 0.875rem;
+    float: right;
+    margin: 8px 0 0; }
+    .top-colorstrip #portal-personaltools dt a {
+      color: white; }
+  .top-colorstrip #anon-personalbar a {
+    color: white; }
 
 /*header*/
 .main-header {
@@ -6901,7 +6911,8 @@ nav {
   .lang-container select {
     color: white;
     border: none;
-    background-color: transparent;
+    /*background-color: transparent;*/
+    background: url(./images/arrow-d.png) right center no-repeat transparent;
     padding-right: 20px;
     margin-bottom: 0; }
     .lang-container select option {
@@ -9238,7 +9249,7 @@ form[action="enl_subscribers_view"] input[type="submit"] {
   padding: 8px; }
 
 /*field required*/
-.field label[for="form.email"], .field label[for="form.current_password"], .field label[for="form.new_password"], .field label[for="form.new_password_ctl"] {
+.field label[for="form.email"], .field label[for="form.current_password"], .field label[for="form.new_password"], .field label[for="form.new_password_ctl"], .field label[for="sender_from_address"], .field label[for="subject"], .field label[for="message"] {
   display: inline; }
 .field .fieldRequired {
   color: #ececec !important; }
