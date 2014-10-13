@@ -6898,6 +6898,8 @@ nav {
       padding-top: 5px; }
       nav ul li a {
         color: white; }
+      nav ul li a:hover {
+        color: #00033f; }
     nav ul li:after {
       content: '|';
       margin: 0 5px;
