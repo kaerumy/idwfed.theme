@@ -5232,7 +5232,7 @@ a {
   text-decoration: none;
   line-height: inherit; }
   a:hover, a:focus {
-    color: #000336; }
+    color: #00056c; }
   a img {
     border: none; }
 
@@ -8773,19 +8773,20 @@ dl.portletNavigationTree dd.portletItem {
   padding: 0; }
 
 dl.portlet ul.navTreeLevel0 > .navTreeItem {
-  padding: 0.25em 1em;
+  /*padding: 0.25em 1em;*/
+  padding: 0 1em;
   border-bottom: 0.1em dotted #dddddd;
   line-height: 2em; }
 
 dl.portlet ul.navTreeLevel1 .navTreeItem {
   padding-left: 0.5em;
-  line-height: 2em; }
+  line-height: 1.5em; }
 
 dl.portlet ul.navTree .navTreeCurrentItem {
-  background-color: #dddddd;
-  border-left: 1em solid #dddddd;
-  margin-left: -1em;
-  margin-right: -1em; }
+  /*background-color: #ddd;*/
+  /*border-left: 1em solid #ddd;*/
+  /*margin-left: -1em;*/
+  /*margin-right: -1em;*/ }
 
 /* @end */
 /* @group Calendar portlet */
@@ -9285,7 +9286,6 @@ form[action="enl_subscribers_view"] input[type="submit"] {
   color: inherit !important; }
 
 /*viewlet below content body*/
-#viewlet-below-content-body:after,
 #viewlet-below-content-body:before {
   content: ' ';
   clear: both;
