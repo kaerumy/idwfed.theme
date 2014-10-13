@@ -9283,3 +9283,10 @@ form[action="enl_subscribers_view"] input[type="submit"] {
 /*faceted*/
 .faceted_letter, .faceted-empty-column {
   color: inherit !important; }
+
+/*viewlet below content body*/
+#viewlet-below-content-body:after,
+#viewlet-below-content-body:before {
+  content: ' ';
+  clear: both;
+  display: block; }
