@@ -22,6 +22,11 @@
         cacheable="True" compression="safe" cookable="True"
         enabled="1" expression="not: request/HTTP_X_THEME_ENABLED | nothing"/>
     <stylesheet title=""
+        id="authoring.css"
+        media="screen" rel="stylesheet" rendering="import"
+        cacheable="True" compression="safe" cookable="True"
+        enabled="1" expression="not: request/HTTP_X_THEME_ENABLED | nothing"/>
+    <stylesheet title=""
         id="forms.css"
         media="screen" rel="stylesheet" rendering="import"
         cacheable="True" compression="safe" cookable="True"
