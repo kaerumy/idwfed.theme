@@ -8211,7 +8211,7 @@ div.portletAssignments .managedPortletActions a, div.portletAssignments .managed
   padding: 0; }
 
 /*assign rule*/
-input[name="form.button.AddAssignment"] {
+input[name='form.button.AddAssignment'] {
   padding: 8px;
   vertical-align: middle; }
 
