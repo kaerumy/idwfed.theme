@@ -328,6 +328,7 @@
         <after css:theme-children="body">
             <script src="++theme++idwfed.theme/js/foundation.min.js"></script>
             <script src="++theme++idwfed.theme/js/app.js"></script>
+            <xsl:copy-of css:select="#portal-footer-wrapper > div > script" />
         </after>
         
 </rules>
