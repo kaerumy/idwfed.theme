@@ -173,14 +173,20 @@
                         <xsl:element name="a">
                             <xsl:if test="/html[@lang='es']">
                                 <xsl:attribute name="href">
-                                    /es/join-us
+                                    /es/@@register
                                 </xsl:attribute>
                             </xsl:if>
                             <xsl:if test="/html[@lang='en']">
                                 <xsl:attribute name="href">
-                                    /en/join-us
+                                    /en/@@register
                                 </xsl:attribute>
                             </xsl:if>
+                             <xsl:if test="/html[@lang='fr']">
+                                <xsl:attribute name="href">
+                                    /fr/@@register
+                                </xsl:attribute>
+                            </xsl:if>
+
                             Join us!
                         </xsl:element>
                     </div>
