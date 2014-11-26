@@ -6838,6 +6838,8 @@ body {
   background: none transparent !important; }
   .canvas-wrapper .panel .mobile-menu section {
     background: none #8ec95f; }
+    .canvas-wrapper .panel .mobile-menu section h1.title {
+      font-size: 1rem; }
   .canvas-wrapper .panel .mobile-language-container {
     border: 1px solid #555555;
     padding: 20px;
@@ -8097,6 +8099,8 @@ dl.newTagsSection dd textarea {
     width: auto;
     height: auto;
     vertical-align: middle; }
+  #content label select {
+    width: 100%; }
   form#groups_search, form#users_search {
     overflow-x: scroll; }
     form#groups_search input.quickSearch, form#users_search input.quickSearch {
@@ -8192,7 +8196,6 @@ input#sharing-user-group-search, input#sharing-search-button {
 input#sharing-search-button {
   padding: 8px 10px; }
 
-/*CSS ADJUSTMENT FOR NEW PACKAGES*/
 /*Content Chooser*/
 input#contentchooser-content-trees, input#contentchooser-content-search-input {
   box-shadow: none;
@@ -8272,3 +8275,8 @@ form[action="enl_subscribers_view"] input[type="submit"] {
   content: ' ';
   clear: both;
   display: block; }
+
+/*datagridwidget-table-view*/
+.datagridwidget-table-view {
+  border-collapse: collapse;
+  border: none; }
