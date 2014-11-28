@@ -6858,6 +6858,8 @@ body {
       color: white; }
   .top-colorstrip #anon-personalbar a {
     color: white; }
+  .top-colorstrip #anon-personalbar a:first-child:after {
+    content: ' | '; }
 
 /*header*/
 .main-header {
