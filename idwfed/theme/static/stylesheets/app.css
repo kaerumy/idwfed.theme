@@ -8295,3 +8295,8 @@ form[action="enl_subscribers_view"] input[type="submit"] {
 
 .theme-portlet dd:last-child a {
   color: #fc7045; }
+
+.event.details {
+  background: none white;
+  padding: 10px;
+  border-radius: 5px; }
