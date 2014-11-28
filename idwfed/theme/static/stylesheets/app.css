@@ -8288,9 +8288,9 @@ form[action="enl_subscribers_view"] input[type="submit"] {
   border-collapse: collapse;
   border: none; }
 
-#content h1 a, #content h2 a, #content h3 a, #content h4 a, #content h5 a, #content h6 a {
+#portal-column-content h1 a, #portal-column-content h2 a, #portal-column-content h3 a, #portal-column-content h4 a, #portal-column-content h5 a, #portal-column-content h6 a {
   color: #00033f; }
-#content a {
+#portal-column-content a {
   color: #fc7045; }
 
 .theme-portlet dd:last-child a {
