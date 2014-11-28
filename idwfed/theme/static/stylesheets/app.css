@@ -2,7 +2,7 @@
  *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
  */
-@import url(http://fonts.googleapis.com/css?family=Anton);
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700);
 /* FONT PATH
  * -------------------------- */
 @font-face {
@@ -5254,7 +5254,7 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: Anton, "Times New Roman", "Georgia", serif;
+  font-family: "Yanone Kaffeesatz", "Times New Roman", "Georgia", serif;
   font-weight: normal;
   font-style: normal;
   color: #222222;
@@ -6890,7 +6890,7 @@ h1.title {
 /*navigation*/
 nav {
   color: white;
-  font-family: Anton, Norwester, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: '' Yanone Kaffeesatz '', Norwester, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   text-transform: uppercase; }
   nav ul {
     font-size: 1.1rem;
@@ -7044,7 +7044,7 @@ nav {
       height: 300px;
       top: 100px;
       left: 600px;
-      font-family: Anton, Norwester, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+      font-family: '' Yanone Kaffeesatz '', Norwester, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
       .slider-container .slides-container .slide-item .slide-caption .bg-round {
         position: absolute;
         width: 200px;
@@ -7077,7 +7077,7 @@ nav {
       float: right;
       margin-right: 180px;
       font-size: 32px;
-      font-family: Anton, Norwester, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+      font-family: '' Yanone Kaffeesatz '', Norwester, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
       text-transform: uppercase;
       color: #f7b500;
       line-height: 40px; }
@@ -7116,7 +7116,7 @@ nav {
 
 /*tagline*/
 .tagline {
-  font-family: Anton, Norwester, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: '' Yanone Kaffeesatz '', Norwester, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   text-align: center;
   text-transform: uppercase;
   font-size: 2.5rem;
@@ -7163,7 +7163,7 @@ section.main.home-main {
   padding: 5px 10px;
   color: white;
   font-size: 1.5rem;
-  font-family: Anton, Norwester, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: '' Yanone Kaffeesatz '', Norwester, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   border-radius: 0.5rem 0.5rem 0 0;
   text-transform: uppercase; }
   #sidebar-left dt.portletHeader a, #sidebar-right dt.portletHeader a {
@@ -7178,7 +7178,7 @@ dl.theme-portlet {
     padding: 5px 10px;
     color: white;
     font-size: 1.5rem;
-    font-family: Anton, Norwester, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: '' Yanone Kaffeesatz '', Norwester, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     border-radius: 0.5rem 0.5rem 0 0;
     text-transform: uppercase; }
     dl.theme-portlet dt i {
@@ -7906,7 +7906,7 @@ dl.portlet ul.navTree .navTreeCurrentItem {
   text-transform: uppercase;
   text-align: center;
   font-size: 80px;
-  font-family: Anton, Norwester, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+  font-family: '' Yanone Kaffeesatz '', Norwester, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
   .join-wrapper a {
     color: white;
     text-shadow: -1px 1px 5px #00033f;
