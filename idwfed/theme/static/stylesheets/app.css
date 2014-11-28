@@ -7141,7 +7141,9 @@ section.main.home-main {
   background: none #b5c9c4;
   border-radius: 0.5rem;
   padding-bottom: 10px;
-  margin-bottom: 1.25rem; }
+  margin-bottom: 1.25rem;
+  max-height: 370px;
+  overflow: hidden; }
   .featured .featured-img {
     height: 200px;
     overflow: hidden;
@@ -7172,7 +7174,10 @@ section.main.home-main {
 dl.theme-portlet {
   background: none white;
   border-radius: 0.5rem;
-  padding-bottom: 5px; }
+  padding-bottom: 5px;
+  max-height: 370px;
+  overflow: hidden;
+  text-overflow: ellipsis; }
   dl.theme-portlet dt {
     background: none #8ec95f;
     padding: 5px 10px;
