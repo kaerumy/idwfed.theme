@@ -8282,3 +8282,6 @@ form[action="enl_subscribers_view"] input[type="submit"] {
 .datagridwidget-table-view {
   border-collapse: collapse;
   border: none; }
+
+.tileItem .documentByLine a, .tileItem .tileFooter a {
+  color: #fc7045; }
