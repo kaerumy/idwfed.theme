@@ -8283,5 +8283,7 @@ form[action="enl_subscribers_view"] input[type="submit"] {
   border-collapse: collapse;
   border: none; }
 
-.tileItem .documentByLine a, .tileItem .tileFooter a {
+#content h1 a, #content h2 a, #content h3 a, #content h4 a, #content h5 a, #content h6 a {
+  color: #00033f; }
+#content a {
   color: #fc7045; }
