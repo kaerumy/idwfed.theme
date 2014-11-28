@@ -8287,3 +8287,6 @@ form[action="enl_subscribers_view"] input[type="submit"] {
   color: #00033f; }
 #content a {
   color: #fc7045; }
+
+.theme-portlet dd:last-child a {
+  color: #fc7045; }
