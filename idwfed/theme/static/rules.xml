@@ -76,6 +76,8 @@
         <replace css:theme-children="ul.mobile-languageselector"
             css:content-children="#portal-languageselector"/>
         
+        <after css:theme=".mobile-language-container" css:content="#portal-personaltools-wrapper" />
+        
         <!--drop from content-->
         <drop css:content="body.template-document_view #parent-fieldname-description" />
 

@@ -6844,6 +6844,45 @@ body {
     border: 1px solid #555555;
     padding: 20px;
     margin: 20px; }
+  .canvas-wrapper .panel #portal-personaltools-wrapper {
+    margin: 0 20px; }
+    .canvas-wrapper .panel #portal-personaltools-wrapper > ul {
+      list-style: none;
+      padding: 0;
+      margin: 0; }
+      .canvas-wrapper .panel #portal-personaltools-wrapper > ul li a {
+        border-style: solid;
+        border-width: 0px;
+        cursor: pointer;
+        font-family: Aleo, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+        font-weight: normal;
+        line-height: normal;
+        margin: 0 0 1.25rem;
+        position: relative;
+        text-decoration: none;
+        text-align: center;
+        -webkit-appearance: none;
+        -webkit-border-radius: 0;
+        display: inline-block;
+        padding-top: 1rem;
+        padding-right: 2rem;
+        padding-bottom: 1.0625rem;
+        padding-left: 2rem;
+        font-size: 1rem;
+        background-color: #00033f;
+        border-color: #000332;
+        color: white;
+        transition: background-color 300ms ease-out;
+        display: block;
+        margin-bottom: 5px; }
+        .canvas-wrapper .panel #portal-personaltools-wrapper > ul li a:hover, .canvas-wrapper .panel #portal-personaltools-wrapper > ul li a:focus {
+          background-color: #000332; }
+        .canvas-wrapper .panel #portal-personaltools-wrapper > ul li a:hover, .canvas-wrapper .panel #portal-personaltools-wrapper > ul li a:focus {
+          color: white; }
+    .canvas-wrapper .panel #portal-personaltools-wrapper dt a {
+      color: white; }
+    .canvas-wrapper .panel #portal-personaltools-wrapper dd ul {
+      list-style: none; }
 
 .top-colorstrip {
   background: none #8ec95f; }
