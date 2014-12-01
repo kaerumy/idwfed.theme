@@ -6915,7 +6915,7 @@ h1.title {
     height: 96px; }
     h1.title a div {
       position: absolute;
-      background: url(./images/logo.png) 10px 2px no-repeat transparent;
+      background: url(http://idwf.dev.inigo-tech.com/en/media/logo.png) 10px 2px no-repeat transparent;
       height: 167px;
       width: 180px;
       top: 10px;
@@ -8123,7 +8123,7 @@ dl.newTagsSection dd textarea {
 
 /*start formhelp*/
 .formHelp {
-  font-size: 12px;
+  /*font-size: 12px;*/
   font-weight: normal;
   color: #6f6f6f; }
 
