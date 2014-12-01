@@ -177,19 +177,20 @@
                                 <xsl:attribute name="href">
                                     /es/@@register
                                 </xsl:attribute>
+                                Regístrese Ahora!
                             </xsl:if>
                             <xsl:if test="/html[@lang='en']">
                                 <xsl:attribute name="href">
                                     /en/@@register
                                 </xsl:attribute>
+                                Register Now!
                             </xsl:if>
                              <xsl:if test="/html[@lang='fr']">
                                 <xsl:attribute name="href">
                                     /fr/@@register
                                 </xsl:attribute>
+                                Inscrivez-vous!
                             </xsl:if>
-
-                            Join us!
                         </xsl:element>
                     </div>
                 </xsl:if>
