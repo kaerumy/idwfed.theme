@@ -197,7 +197,7 @@
             </replace>
             
             <!--updates-->
-            <replace css:theme-children=".wrap-updates">
+            <replace css:theme=".wrap-updates">
                 <dl class="theme-portlet wrap-updates">
                     <dt>
                         <i class="fa fa-check-circle-o theme-orange"></i>
@@ -218,7 +218,7 @@
                 </dl>
             </replace>
             <!--featured content-->
-            <replace css:theme-children=".wrap-featured">
+            <replace css:theme=".wrap-featured">
                 <div class="featured wrap-featured">
                     <div class="featured-img">
                         <xsl:copy-of css:select="#content > div:nth-child(2) > div:nth-child(2) > div.tile > div.cover-basic-tile.tile-content > a.imag" />
@@ -232,7 +232,7 @@
                 </div>
             </replace>
             <!--campaign-->
-            <replace css:theme-children=".wrap-campaign">
+            <replace css:theme=".wrap-campaign">
                 <dl class="theme-portlet wrap-campaign">
                     <dt><i class="fa fa-globe theme-orange"></i> <xsl:value-of css:select="#content > div:nth-child(2) > div:nth-child(3) > div.tile.tile-default > div.cover-collection-tile.tile-content > div.tile-header > h2" /></dt>
                     <dd>
@@ -246,7 +246,7 @@
                 </dl>
             </replace>
             <!--activities-->
-            <replace css:theme-children=".wrap-activities">
+            <replace css:theme=".wrap-activities">
                 <dl class="theme-portlet wrap-activities">
                     <dt>
                         <i class="fa fa-calendar theme-orange"></i>
@@ -274,7 +274,7 @@
                 </dl>
             </replace>
             <!--partner-->
-            <replace css:theme-children=".wrap-partner">
+            <replace css:theme=".wrap-partner">
                 <dl class="theme-portlet wrap-partner">
                     <dt>
                         <i class="fa fa-user theme-orange"></i>
@@ -296,7 +296,7 @@
                 </dl>
             </replace>
             <!--partners-->
-            <replace css:theme-children=".wrap-partners">
+            <replace css:theme=".wrap-partners">
                 <drop css:content="#content > div:nth-child(3) > div:nth-child(3) > div.tile > div.cover-richtext-tile.tile-content > h2" />
                 <dl class="theme-portlet wrap-campaign">
                     <dt>
