@@ -7234,7 +7234,7 @@ dl.theme-portlet {
     dl.theme-portlet dt .fa-users, dl.theme-portlet dt .fa-calendar {
       padding-left: 8px; }
   dl.theme-portlet dd {
-    padding: 10px; }
+    padding: 0 10px; }
     dl.theme-portlet dd .title {
       font-size: 1.2rem;
       color: #00033f; }
@@ -7254,6 +7254,8 @@ dl.theme-portlet {
       list-style: none;
       margin: 0;
       padding: 0; }
+      dl.theme-portlet dd ul li {
+        margin-bottom: 0.5em; }
       dl.theme-portlet dd ul li:before {
         content: "\00BB \0020"; }
 
