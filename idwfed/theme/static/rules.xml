@@ -25,6 +25,8 @@
         <!--logo-->
         <drop css:content="dl.portlet-static-international-domestic-workers-federation" />
         <drop css:content="dl.portlet-static-federacion-internacional-de-trabajadores-del-hogar" />
+        <drop css:content="dl.portlet-static-federation-internationale-des-travailleurs" />
+        
         <replace css:theme="#logo">
             <xsl:element name="a">
                 <xsl:attribute name="href">
@@ -34,6 +36,11 @@
                 <xsl:if test="/html[@lang='es']">
                     <span style="font-size:1.2rem">
                         <xsl:value-of css:select="dl.portlet-static-federacion-internacional-de-trabajadores-del-hogar > dt" />
+                    </span>
+                </xsl:if>
+                <xsl:if test="/html[@lang='fr']">
+                    <span style="font-size:1.2rem">
+                        <xsl:value-of css:select="dl.portlet-static-federation-internationale-des-travailleurs > dt" />
                     </span>
                 </xsl:if>
                 <span>
@@ -46,6 +53,7 @@
         <replace css:theme-children=".tagline">
             <xsl:value-of css:select="dl.portlet-static-international-domestic-workers-federation > dd > p" />
             <xsl:value-of css:select="dl.portlet-static-federacion-internacional-de-trabajadores-del-hogar > dd> p" />
+            <xsl:value-of css:select="dl.portlet-static-federation-internationale-des-travailleurs > dd> p" />
         </replace>
 
         <replace css:theme-children="#portal-globalnav"
