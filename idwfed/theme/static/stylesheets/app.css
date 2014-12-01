@@ -5241,7 +5241,7 @@ p {
   font-family: inherit;
   font-weight: normal;
   font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.4;
   margin-bottom: 1.25rem;
   text-rendering: optimizeLegibility; }
   p.lead {
@@ -5325,7 +5325,7 @@ code {
 /* Lists */
 ul, ol, dl {
   font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.4;
   margin-bottom: 1.25rem;
   list-style-position: outside;
   font-family: inherit; }
@@ -5397,7 +5397,7 @@ blockquote {
       color: #555555; }
 
 blockquote, blockquote p {
-  line-height: 1.6;
+  line-height: 1.4;
   color: #6f6f6f; }
 
 /* Microformats */
@@ -7172,16 +7172,12 @@ section.main.inner > div {
 
 section.main.home-main {
   padding-top: 35px; }
-  section.main.home-main > div:nth-child(2) {
-    margin-bottom: 20px; }
 
 /*home featured*/
 .featured {
   background: none #b5c9c4;
   border-radius: 0.5rem;
   padding-bottom: 10px;
-  margin-bottom: 1.25rem;
-  max-height: 370px;
   overflow: hidden; }
   .featured .featured-img {
     height: 200px;
@@ -7193,10 +7189,9 @@ section.main.home-main {
   .featured .featured-text .title {
     font-size: 1.2rem;
     color: #000136;
-    margin-bottom: 10px; }
+    margin-bottom: 5px; }
   .featured .featured-text p {
-    margin-left: 10px;
-    margin-right: 10px; }
+    margin-left: 10px; }
 
 /*theme portlet*/
 #sidebar-left dt.portletHeader, #sidebar-right dt.portletHeader {
@@ -7210,11 +7205,15 @@ section.main.home-main {
   #sidebar-left dt.portletHeader a, #sidebar-right dt.portletHeader a {
     color: white; }
 
+/*theme portlet*/
+@media only screen and (min-width:64em) {
+  .featured, dl.theme-portlet {
+    height: 350px; } }
+
 dl.theme-portlet {
   background: none white;
   border-radius: 0.5rem;
   padding-bottom: 5px;
-  max-height: 370px;
   overflow: hidden;
   text-overflow: ellipsis; }
   dl.theme-portlet dt {
