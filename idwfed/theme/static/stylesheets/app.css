@@ -7187,15 +7187,13 @@ section.main.home-main {
     .featured .featured-img img {
       border-radius: 0.5rem 0.5rem 0 0;
       width: 100%; }
-  .featured .featured-text {
-    text-align: justify; }
-    .featured .featured-text .title {
-      font-size: 1.2rem;
-      color: #000136;
-      margin-bottom: 5px; }
-    .featured .featured-text p {
-      margin-left: 10px;
-      margin-right: 10px; }
+  .featured .featured-text .title {
+    font-size: 1.2rem;
+    color: #000136;
+    margin-bottom: 5px; }
+  .featured .featured-text p {
+    margin-left: 10px;
+    margin-right: 10px; }
 
 /*theme portlet*/
 #sidebar-left dt.portletHeader, #sidebar-right dt.portletHeader {
@@ -7238,8 +7236,7 @@ dl.theme-portlet {
     dl.theme-portlet dt .fa-users, dl.theme-portlet dt .fa-calendar {
       padding-left: 8px; }
   dl.theme-portlet dd {
-    padding: 0 10px;
-    text-align: justify; }
+    padding: 0 10px; }
     dl.theme-portlet dd .title {
       font-size: 1.2rem;
       color: #00033f; }
