@@ -66,7 +66,7 @@
         <replace css:theme-children='.lang-container'>
             <xsl:variable name='title_tag' select="html/head/title"/>
             <select onchange="location = this.options[this.selectedIndex].value;">
-                <option>Select Language</option>
+                <option>Translate</option>
                 <xsl:for-each css:select="#portal-languageselector li">
                     <xsl:element name="option">
                         <xsl:attribute name="value">
