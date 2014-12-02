@@ -62,6 +62,7 @@
         <replace css:theme-children="ul.mobile-menu"
             css:content-children="#portal-globalnav"/>
         
+        <drop css:theme=".lang-container" css:if-not-content="#portal-languageselector" />
         <replace css:theme-children='.lang-container'>
             <xsl:variable name='title_tag' select="html/head/title"/>
             <select onchange="location = this.options[this.selectedIndex].value;">
