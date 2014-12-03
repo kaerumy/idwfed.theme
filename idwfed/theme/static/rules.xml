@@ -160,7 +160,7 @@
             <!--slider-->
             <replace css:theme-children=".focus-container">
                 <xsl:copy-of css:select=".portletUnsliderPortlet" />
-                <div class="login-wrapper">
+                <div class="login-wrapper hide-for-small hide-for-medium show-for-large-up">
                     <xsl:if css:test="#personaltools-login">
                         <xsl:element name="a">
                             <xsl:attribute name="href">
