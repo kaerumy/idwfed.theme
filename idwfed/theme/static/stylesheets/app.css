@@ -7898,7 +7898,7 @@ dl.portlet ul.navTree .navTreeCurrentItem {
     background-position: center;
     background-color: black; }
     .unslider-portlet .unslider-slide a {
-      background-size: auto 100%; }
+      background-size: 100% 100%; }
 
 .unslider-slide-content {
   position: absolute;
@@ -8011,6 +8011,7 @@ dl.portlet ul.navTree .navTreeCurrentItem {
       display: block;
       background: none transparent; }
   .unslider-portlet .unslider-slide a {
+    background-size: 100% 100%;
     width: 100% !important; } }
 
 /*FOUNDATION/PLONE DEFAULT CONFLICT CLASSES */
