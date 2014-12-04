@@ -7901,21 +7901,24 @@ dl.portlet ul.navTree .navTreeCurrentItem {
       background-size: 100% 100%; }
 
 
-.unslider-slide-content {
-  background-color: rgba(80, 100, 82, 0.7);
-  position: absolute;
-  bottom: 25%;
-  width: 15%;
-  padding: 15px !important;
-  margin-left: 5%; }
-  .unslider-slide-content h1 {
-    font-size: 32px;
-    color: white;
-    text-shadow: -1px 1px 5px #00033f;
-    font-family: Aleo, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
-  .unslider-slide-content p {
-    display: none; }
-
+/*.unslider-slide-content {
+	padding: 438px 0 0 0;
+	h1{
+		background-color: rgba(80, 100, 82, 0.7);
+		font-size: 32px;
+		color: #fff;
+		text-shadow: -1px 1px 5px #00033F;
+		font-family: Aleo, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+		padding: 15px 15px 15px 5%;
+		width: 75%;
+		display: inline;
+		margin: 0;
+		text-align: left;
+	}
+	p{
+		display: none;
+	}
+}*/
 .join-wrapper {
   position: absolute;
   bottom: 10%;
@@ -7975,25 +7978,21 @@ dl.portlet ul.navTree .navTreeCurrentItem {
 
 /*large up*/
 @media only screen and (min-width:64em) {
-  .unslider-slide-content {
-    background-color: rgba(80, 100, 82, 0.7);
-    text-align: left;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding-top: 20px !important;
-    padding-bottom: 20px;
-    margin-left: 0; }
-    .unslider-slide-content h1 {
+  *.unslider-slide-content {
+    padding: 438px 0 0 0 !important; }
+    *.unslider-slide-content h1 {
+      background-color: rgba(80, 100, 82, 0.7);
       font-size: 32px;
       color: white;
       text-shadow: -1px 1px 5px #00033f;
       font-family: Aleo, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-      margin-left: 1%; }
-    .unslider-slide-content p {
+      padding: 15px 15px 15px 5%;
+      width: 100%;
+      display: block !important;
+      margin: 0;
+      text-align: left; }
+    *.unslider-slide-content p {
       display: none; }
-  .unslider-portlet .unslider-slide a {
-    width: 100% !important; }
   .join-wrapper {
     position: absolute;
     top: 30%;
@@ -8011,7 +8010,9 @@ dl.portlet ul.navTree .navTreeCurrentItem {
       text-shadow: -1px 1px 5px #00033f;
       padding-top: 45px;
       display: block;
-      background: none transparent; } }
+      background: none transparent; }
+  .unslider-portlet .unslider-slide a {
+    width: 100% !important; } }
 
 /*FOUNDATION/PLONE DEFAULT CONFLICT CLASSES */
 /*class ROW*/
