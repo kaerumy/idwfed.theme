@@ -7992,6 +7992,8 @@ dl.portlet ul.navTree .navTreeCurrentItem {
       margin-left: 1%; }
     .unslider-slide-content p {
       display: none; }
+  .unslider-portlet .unslider-slide a {
+    width: 100% !important; }
   .join-wrapper {
     position: absolute;
     top: 30%;
