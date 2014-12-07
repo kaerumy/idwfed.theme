@@ -25,6 +25,8 @@
         <!--logo-->
         <drop css:content="dl.portlet-static-international-domestic-workers-federation" />
         <drop css:content="dl.portlet-static-federacion-internacional-de-trabajadores-del-hogar" />
+        <drop css:content="dl.portlet-static-federation-internationale-des-travailleurs" />
+        
         <replace css:theme="#logo">
             <xsl:element name="a">
                 <xsl:attribute name="href">
@@ -34,6 +36,11 @@
                 <xsl:if test="/html[@lang='es']">
                     <span style="font-size:1.2rem">
                         <xsl:value-of css:select="dl.portlet-static-federacion-internacional-de-trabajadores-del-hogar > dt" />
+                    </span>
+                </xsl:if>
+                <xsl:if test="/html[@lang='fr']">
+                    <span style="font-size:1.2rem">
+                        <xsl:value-of css:select="dl.portlet-static-federation-internationale-des-travailleurs > dt" />
                     </span>
                 </xsl:if>
                 <span>
@@ -46,6 +53,7 @@
         <replace css:theme-children=".tagline">
             <xsl:value-of css:select="dl.portlet-static-international-domestic-workers-federation > dd > p" />
             <xsl:value-of css:select="dl.portlet-static-federacion-internacional-de-trabajadores-del-hogar > dd> p" />
+            <xsl:value-of css:select="dl.portlet-static-federation-internationale-des-travailleurs > dd> p" />
         </replace>
 
         <replace css:theme-children="#portal-globalnav"
@@ -54,10 +62,11 @@
         <replace css:theme-children="ul.mobile-menu"
             css:content-children="#portal-globalnav"/>
         
+        <drop css:theme=".lang-container" css:if-not-content="#portal-languageselector" />
         <replace css:theme-children='.lang-container'>
             <xsl:variable name='title_tag' select="html/head/title"/>
             <select onchange="location = this.options[this.selectedIndex].value;">
-                <option>Select Language</option>
+                <option>Translate</option>
                 <xsl:for-each css:select="#portal-languageselector li">
                     <xsl:element name="option">
                         <xsl:attribute name="value">
@@ -75,6 +84,8 @@
             <!--mobile language-->
         <replace css:theme-children="ul.mobile-languageselector"
             css:content-children="#portal-languageselector"/>
+        
+        <after css:theme=".mobile-language-container" css:content="#portal-personaltools-wrapper" />
         
         <!--drop from content-->
         <drop css:content="body.template-document_view #parent-fieldname-description" />
@@ -148,8 +159,30 @@
             </after>
             <!--slider-->
             <replace css:theme-children=".focus-container">
-                <xsl:copy-of css:select=".portletUnsliderPortlet" />
-                <div class="login-wrapper">
+                <div style="display:none">
+                    <xsl:copy-of css:select=".portletUnsliderPortlet" />
+                </div>
+                <!--********-->
+                <ul id="demo1">
+                    <xsl:for-each css:select="li.unslider-slide">
+                        <xsl:element name="li">
+                        <xsl:attribute name="class">slide-item</xsl:attribute>
+                            <xsl:element name="a">
+                                <xsl:attribute name="href">
+                                    <xsl:value-of select="a/@href" />
+                                </xsl:attribute>
+                                <xsl:element name="img">
+                                    <xsl:attribute name="alt">
+                                        <xsl:value-of css:select="a .unslider-slide-content h1" />
+                                    </xsl:attribute>
+                                    <xsl:attribute name="src">http://dummyimage.com/1400x500/000/ffffff.gif</xsl:attribute>
+                                </xsl:element>
+                            </xsl:element>
+                        </xsl:element>
+                    </xsl:for-each>
+                </ul>                           
+                <!--********-->
+                <div class="login-wrapper hide-for-small hide-for-medium show-for-large-up">
                     <xsl:if css:test="#personaltools-login">
                         <xsl:element name="a">
                             <xsl:attribute name="href">
@@ -175,26 +208,27 @@
                                 <xsl:attribute name="href">
                                     /es/@@register
                                 </xsl:attribute>
+                                Regístrese Ahora!
                             </xsl:if>
                             <xsl:if test="/html[@lang='en']">
                                 <xsl:attribute name="href">
                                     /en/@@register
                                 </xsl:attribute>
+                                Register Now!
                             </xsl:if>
                              <xsl:if test="/html[@lang='fr']">
                                 <xsl:attribute name="href">
                                     /fr/@@register
                                 </xsl:attribute>
+                                Inscrivez-vous!
                             </xsl:if>
-
-                            Join us!
                         </xsl:element>
                     </div>
                 </xsl:if>
             </replace>
             
             <!--updates-->
-            <replace css:theme-children=".wrap-updates">
+            <replace css:theme=".wrap-updates">
                 <dl class="theme-portlet wrap-updates">
                     <dt>
                         <i class="fa fa-check-circle-o theme-orange"></i>
@@ -215,7 +249,7 @@
                 </dl>
             </replace>
             <!--featured content-->
-            <replace css:theme-children=".wrap-featured">
+            <replace css:theme=".wrap-featured">
                 <div class="featured wrap-featured">
                     <div class="featured-img">
                         <xsl:copy-of css:select="#content > div:nth-child(2) > div:nth-child(2) > div.tile > div.cover-basic-tile.tile-content > a.imag" />
@@ -229,7 +263,7 @@
                 </div>
             </replace>
             <!--campaign-->
-            <replace css:theme-children=".wrap-campaign">
+            <replace css:theme=".wrap-campaign">
                 <dl class="theme-portlet wrap-campaign">
                     <dt><i class="fa fa-globe theme-orange"></i> <xsl:value-of css:select="#content > div:nth-child(2) > div:nth-child(3) > div.tile.tile-default > div.cover-collection-tile.tile-content > div.tile-header > h2" /></dt>
                     <dd>
@@ -243,7 +277,7 @@
                 </dl>
             </replace>
             <!--activities-->
-            <replace css:theme-children=".wrap-activities">
+            <replace css:theme=".wrap-activities">
                 <dl class="theme-portlet wrap-activities">
                     <dt>
                         <i class="fa fa-calendar theme-orange"></i>
@@ -271,7 +305,7 @@
                 </dl>
             </replace>
             <!--partner-->
-            <replace css:theme-children=".wrap-partner">
+            <replace css:theme=".wrap-partner">
                 <dl class="theme-portlet wrap-partner">
                     <dt>
                         <i class="fa fa-user theme-orange"></i>
@@ -293,7 +327,7 @@
                 </dl>
             </replace>
             <!--partners-->
-            <replace css:theme-children=".wrap-partners">
+            <replace css:theme=".wrap-partners">
                 <drop css:content="#content > div:nth-child(3) > div:nth-child(3) > div.tile > div.cover-richtext-tile.tile-content > h2" />
                 <dl class="theme-portlet wrap-campaign">
                     <dt>
@@ -309,6 +343,45 @@
                 </dl>
             </replace>
             
+            <after css:theme-children="body">
+                <script src="++theme++idwfed.theme/js/slippry.min.js"></script>
+                <script>
+                    $(function(){
+                    
+                        var demo1 = $("#demo1").slippry({
+                            // transition: 'fade',
+                            // useCSS: true,
+                            // speed: 1000,
+                            // pause: 3000,
+                            // auto: true,
+                            // preload: 'visible',
+                            // autoHover: false
+                            pager: false,
+                        });
+                    
+                        Urls = [];
+                        $('li.unslider-slide').each(function(key, value){
+                            bgUrl = $(this).find('a').css('background-image');
+                            srcUrl = bgUrl.substring(4,bgUrl.length-1);
+                            Urls[key] = srcUrl;
+                            
+                        });
+                        
+                        if (Urls.length > 0){
+                            if ($('li.slide-item').length == Urls.length){
+                                $('li.slide-item').each(function(key, value){
+                                    $(this).find('img').attr('src', Urls[key]);
+                                });
+                            }
+                            
+                        }
+                        $('li.slide-item').each(function(key, value){
+                            $(this).find('img').attr('src', Urls[key]);
+                        });
+                 
+                    });
+                </script>
+            </after>
         </rules>
         
         <theme href="center-content.html" if-content="//div[@id='portal-column-one'] and //div[@id='portal-column-two']"/>
