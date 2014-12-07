@@ -159,7 +159,29 @@
             </after>
             <!--slider-->
             <replace css:theme-children=".focus-container">
-                <xsl:copy-of css:select=".portletUnsliderPortlet" />
+                <div style="display:none">
+                    <xsl:copy-of css:select=".portletUnsliderPortlet" />
+                </div>
+                <!--********-->
+                <ul id="demo1">
+                    <xsl:for-each css:select="li.unslider-slide">
+                        <xsl:element name="li">
+                        <xsl:attribute name="class">slide-item</xsl:attribute>
+                            <xsl:element name="a">
+                                <xsl:attribute name="href">
+                                    <xsl:value-of select="a/@href" />
+                                </xsl:attribute>
+                                <xsl:element name="img">
+                                    <xsl:attribute name="alt">
+                                        <xsl:value-of css:select="a .unslider-slide-content h1" />
+                                    </xsl:attribute>
+                                    <xsl:attribute name="src">http://dummyimage.com/1400x500/000/ffffff.gif</xsl:attribute>
+                                </xsl:element>
+                            </xsl:element>
+                        </xsl:element>
+                    </xsl:for-each>
+                </ul>                           
+                <!--********-->
                 <div class="login-wrapper hide-for-small hide-for-medium show-for-large-up">
                     <xsl:if css:test="#personaltools-login">
                         <xsl:element name="a">
@@ -321,6 +343,45 @@
                 </dl>
             </replace>
             
+            <after css:theme-children="body">
+                <script src="++theme++idwfed.theme/js/slippry.min.js"></script>
+                <script>
+                    $(function(){
+                    
+                        var demo1 = $("#demo1").slippry({
+                            // transition: 'fade',
+                            // useCSS: true,
+                            // speed: 1000,
+                            // pause: 3000,
+                            // auto: true,
+                            // preload: 'visible',
+                            // autoHover: false
+                            pager: false,
+                        });
+                    
+                        Urls = [];
+                        $('li.unslider-slide').each(function(key, value){
+                            bgUrl = $(this).find('a').css('background-image');
+                            srcUrl = bgUrl.substring(4,bgUrl.length-1);
+                            Urls[key] = srcUrl;
+                            
+                        });
+                        
+                        if (Urls.length > 0){
+                            if ($('li.slide-item').length == Urls.length){
+                                $('li.slide-item').each(function(key, value){
+                                    $(this).find('img').attr('src', Urls[key]);
+                                });
+                            }
+                            
+                        }
+                        $('li.slide-item').each(function(key, value){
+                            $(this).find('img').attr('src', Urls[key]);
+                        });
+                 
+                    });
+                </script>
+            </after>
         </rules>
         
         <theme href="center-content.html" if-content="//div[@id='portal-column-one'] and //div[@id='portal-column-two']"/>
